@@ -1,0 +1,68 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+
+    .col {
+        flex: 1;
+    }
+
+    @for $size from 1 through 12 {
+        .col-#{$size} {
+            width: calc($size / 12 * 100%);
+        }
+    }
+
+    @for $size from 1 through 12 {
+        .offset-#{$size} {
+            margin-left: calc($size / 12 * 100%);
+        }
+    }
+}
+
+@mixin grid-system($device) {
+    .row {
+        .col-#{$device} {
+            flex: 1;
+        }
+
+        @for $size from 1 through 12 {
+            .col-#{$device}-#{$size} {
+                width: calc($size / 12 * 100%);
+            }
+        }
+    }
+}
+
+@mixin offset-system($device) {
+    .row {
+        .offset-#{$device} {
+            flex: 1;
+        }
+
+        @for $size from 0 through 12 {
+            .offset-#{$device}-#{$size} {
+                margin-left: calc($size / 12 * 100%);
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    @include grid-system("sm");
+    @include offset-system("sm");
+}
+
+@media (min-width: 768px) {
+    @include grid-system("md");
+    @include offset-system("md");
+}
+
+@media (min-width: 992px) {
+    @include grid-system("lg");
+    @include offset-system("lg");
+}
+
+@media (min-width: 1200px) {
+    @include grid-system("xl");
+    @include offset-system("xl");
+}

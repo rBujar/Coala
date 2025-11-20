@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'coala';
+  src: url('../assets/font/coala.eot');
+  src: url('../assets/font/coala.eot') format('embedded-opentype'),
+       url('../assets/font/coala.woff2') format('woff2'),
+       url('../assets/font/coala.woff') format('woff'),
+       url('../assets/font/coala.ttf') format('truetype'),
+       url('../assets/font/coala.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'coala';
+    src: url('../font/coala.svg?92970068#coala') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "coala";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-check:before { content: '\e800'; } /* '' */
+.icon-star:before { content: '\e802'; } /* '' */
+.icon-play:before { content: '\e803'; } /* '' */
+.icon-search:before { content: '\e804'; } /* '' */
+.icon-book:before { content: '\e805'; } /* '' */
+.icon-compress:before { content: '\e806'; } /* '' */
+.icon-settings:before { content: '\e807'; } /* '' */
+.icon-cloud:before { content: '\e808'; } /* '' */
+.icon-user:before { content: '\e809'; } /* '' */
+.icon-bolt:before { content: '\e80a'; } /* '' */
+.icon-phone:before { content: '\e80b'; } /* '' */
+.icon-arrow-down:before { content: '\e80c'; } /* '' */
+.icon-heart:before { content: '\e80d'; } /* '' */
+.icon-twitter:before { content: '\f099'; } /* '' */
+.icon-facebook:before { content: '\f09a'; } /* '' */
+.icon-mail:before { content: '\f0e0'; } /* '' */
+.icon-building:before { content: '\f0f7'; } /* '' */
+.icon-desktop:before { content: '\f108'; } /* '' */
+.icon-code:before { content: '\f121'; } /* '' */
+.icon-youtube:before { content: '\f16a'; } /* '' */
+.icon-graduation:before { content: '\f19d'; } /* '' */
+.icon-google:before { content: '\f1a0'; } /* '' */
+.icon-toggle:before { content: '\f205'; } /* '' */
