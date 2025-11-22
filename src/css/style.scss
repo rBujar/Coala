@@ -1,5 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import url("./grid_system.scss");
 @import url("./reset.css");
+@import url("./sections/header.scss");
+
+* {
+    font-family: "Inter", sans-serif;
+}
 
 ::-webkit-scrollbar {
     display: none;
@@ -12,7 +19,7 @@
     --text-color-main: #1E0E62;
     --text-color-secondary: #151439;
     --text-color-white: #FFFFFF;
-    --text-color-grey: #EBEAED;
+    --text-color-grey: #a0a0a0;
     --background-color-dark: #2F1893;
 }
 
@@ -24,7 +31,7 @@
     font-weight: 700;
 }
 
-.text-xm{
+.text-xs{
     font-size: 14px;
     line-height: 22px;
 }
@@ -49,7 +56,18 @@ h1{
     line-height: 52px;
 }
 
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
 .green-btn{
+    border: none;
+    outline: none;
+    border-radius: 50px;
     background-color: var(--action-color-primary);
 
 }
