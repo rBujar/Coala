@@ -1,21 +1,22 @@
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 20px;
-    
-    &__logo{
-        h2{
+
+    &__logo {
+        h2 {
             font-size: 24px;
             color: var(--text-color-main);
         }
     }
 
-    &__hamburger{
+    &__hamburger {
         display: block;
         cursor: pointer;
         z-index: 3;
-        &--bar{
+
+        &--bar {
             display: block;
             background-color: var(--text-color-main);
             border-radius: 3px;
@@ -23,6 +24,7 @@
             height: 3px;
             -webkit-transition: all 0.3s ease-in-out;
             transition: all 0.3s ease-in-out;
+
             &:nth-child(2) {
                 margin: 8px auto;
             }
@@ -43,11 +45,11 @@
         }
     }
 
-    ul{
+    ul {
         padding: 0px;
     }
 
-    &__nav{
+    &__nav {
         position: fixed;
         display: flex;
         flex-direction: column;
@@ -63,7 +65,7 @@
         transition: transform 0.1s ease-in-out;
         border: none;
         outline: none;
-        
+
         &.active {
             transform: translateX(0);
             z-index: 2;
@@ -71,34 +73,33 @@
         }
     }
 
-    &__menu{
+    &__menu {
         display: flex;
         flex-direction: column;
         align-items: left;
         gap: 30px;
     }
 
-    &__item{
+    &__item {
         padding-left: 15px;
-       a{
-        color: var(--text-color-grey);
-        transition: color 0.2s ease-in-out;
 
-        &:hover{
-            color: var(--text-color-white);
+        a {
+            color: var(--text-color-grey);
+            transition: color 0.2s ease-in-out;
+
+            &:hover {
+                color: var(--text-color-white);
+            }
         }
-       }
-            
-        
     }
 
-    &__buttons{
+    &__buttons {
         padding-left: 15px;
         display: flex;
         align-items: center;
         gap: 10px;
 
-        &--signIn{
+        &--signIn {
             border: none;
             outline: none;
             background-color: transparent;
@@ -106,30 +107,29 @@
             transition: color 0.3s ease-in-out;
             padding: 0px;
 
-            &:hover{
+            &:hover {
                 color: var(--text-color-white);
             }
         }
 
-        &--signUp{
+        &--signUp {
             padding: 5px 15px;
             color: var(--text-color-white);
         }
     }
-
 }
 
-@media (min-width: 1200px){
-    .header{
-        &__hamburger{
+@media (min-width: 1200px) {
+    .header {
+        &__hamburger {
             display: none;
         }
 
-        &__logo{
+        &__logo {
             width: 50%;
         }
 
-        &__nav{
+        &__nav {
             position: static;
             transform: none;
             transition: none;
@@ -141,34 +141,34 @@
             padding-top: 0px;
         }
 
-        &__menu{
+        &__menu {
             justify-content: center;
             align-items: center;
             order: 1;
-            
+
             flex-direction: row;
             justify-content: center;
         }
 
-        &__item{
+        &__item {
             padding-left: 0px;
 
-            a{
-                &:hover{
+            a {
+                &:hover {
                     color: var(--text-color-main);
                 }
+            }
         }
-    }
 
-        &__buttons{
+        &__buttons {
             justify-content: flex-end;
             padding-left: 0px;
             order: 2;
 
-            &--signIn{
-                    &:hover{
-                        color: var(--text-color-main);
-                    }
+            &--signIn {
+                &:hover {
+                    color: var(--text-color-main);
+                }
             }
         }
     }

@@ -24,6 +24,8 @@ function getLeftSide() {
   let marginLeft = container.getBoundingClientRect().left;
   if (window.innerWidth < 1200) {
     headerMenu.style.paddingLeft = `${marginLeft}px`;
+  } else{
+    headerMenu.style.paddingLeft = "0px"
   }
 }
 
