@@ -3,6 +3,7 @@
 @import url("./grid_system.scss");
 @import url("./reset.css");
 @import url("./sections/header.scss");
+@import url("./sections/hero.scss");
 
 * {
     font-family: "Inter", sans-serif;
@@ -14,49 +15,53 @@
 
 :root {
     --action-color-primary: #5bdacb;
-    --action-color-secondary: #482BE7;
-    --action-color-third: #E93A7D;
-    --text-color-main: #1E0E62;
+    --action-color-secondary: #482be7;
+    --action-color-third: #e93a7d;
+    --text-color-main: #1e0e62;
     --text-color-secondary: #151439;
-    --text-color-white: #FFFFFF;
+    --text-color-white: #ffffff;
     --text-color-grey: #a0a0a0;
-    --background-color-dark: #2F1893;
+    --background-color-dark: #2f1893;
 }
 
-.text-regular{
+.text-regular {
     font-weight: 400;
 }
 
-.text-bold{
+.text-medium {
+    font-weight: 500;
+}
+
+.text-bold {
     font-weight: 700;
 }
 
-.text-xs{
+.text-xs {
     font-size: 14px;
     line-height: 22px;
 }
 
-.text-sm{
+.text-sm {
     font-size: 16px;
     line-height: 24px;
 }
 
-.text-md{
+.text-md {
     font-size: 18px;
     line-height: 26px;
 }
 
-.text-lg{
+.text-lg {
     font-size: 20px;
     line-height: 28px;
 }
 
-.text-xl{
+.text-xl {
     font-size: 22px;
     line-height: 30px;
 }
 
-h1{
+h1 {
     font-size: 32px;
     line-height: 52px;
 }
@@ -69,24 +74,27 @@ li {
     list-style: none;
 }
 
-.green-btn{
+.green-btn {
     border: none;
     outline: none;
     border-radius: 50px;
     background-color: var(--action-color-primary);
+    color: var(--text-color-white);
+    transition: background-color 0.3s ease-in-out, color 0.5s ease-in-out;
 
+    &:hover {
+        background-color: #85e3d8;
+        color: var(--text-color-grey);
+    }
 }
 
-.default-bg{
+.default-bg {
     background-color: var(--background-color-dark);
-    border: none;
-    outline: none;
-    border-radius: 100%;
-    transition: background-color 0.3s ease-in-out;
+}
 
-    &:hover{
-        background-color: #85e3d8;
-    }
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .container {
@@ -108,7 +116,7 @@ li {
         max-width: 720px;
     }
 
-    h1{
+    h1 {
         font-size: 42px;
         line-height: 52px;
     }
@@ -118,7 +126,8 @@ li {
     .container {
         max-width: 960px;
     }
-    h1{
+
+    h1 {
         font-size: 58px;
         line-height: 70px;
     }
@@ -128,9 +137,15 @@ li {
     .container {
         max-width: 1140px;
     }
-    h1{
+
+    h1 {
         font-size: 72px;
         line-height: 86px;
+    }
+
+    section {
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 }
 
