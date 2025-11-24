@@ -3,6 +3,7 @@
 @import url("./grid_system.scss");
 @import url("./reset.css");
 @import url("./sections/header.scss");
+@import url("./sections/hero.scss");
 
 * {
     font-family: "Inter", sans-serif;
@@ -25,6 +26,9 @@
 
 .text-regular{
     font-weight: 400;
+}
+.text-medium{
+    font-weight: 500;
 }
 
 .text-bold{
@@ -74,6 +78,7 @@ li {
     outline: none;
     border-radius: 50px;
     background-color: var(--action-color-primary);
+    color: var(--text-color-white);
 
 }
 
@@ -87,6 +92,11 @@ li {
     &:hover{
         background-color: #85e3d8;
     }
+}
+
+section{
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .container {
@@ -131,6 +141,10 @@ li {
     h1{
         font-size: 72px;
         line-height: 86px;
+    }
+    section{
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 }
 

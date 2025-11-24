@@ -1,0 +1,52 @@
+.hero {
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+    }
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        h1 {
+            color: var(--text-color-main);
+        }
+
+        p {
+            color: var(--text-color-grey);
+            max-width: 580px;
+        }
+    }
+
+    &__button {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        button {
+            padding: 15px 50px;
+        }
+
+        a {
+            color: var(--action-color-primary);
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .hero {
+        &__item {
+            gap: 60px;
+        }
+
+        &__title {
+            gap: 35px;
+        }
+    }
+}
