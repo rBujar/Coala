@@ -68,6 +68,7 @@ h1 {
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 li {
@@ -81,6 +82,7 @@ li {
     background-color: var(--action-color-primary);
     color: var(--text-color-white);
     transition: background-color 0.3s ease-in-out, color 0.5s ease-in-out;
+    cursor: pointer;
 
     &:hover {
         background-color: #85e3d8;
@@ -144,8 +146,8 @@ section {
     }
 
     section {
-        padding-top: 100px;
-        padding-bottom: 100px;
+        padding-top: 140px;
+        padding-bottom: 140px;
     }
 }
 

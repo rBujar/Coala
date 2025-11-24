@@ -35,6 +35,11 @@
 
         a {
             color: var(--action-color-primary);
+            transition: color 0.3s ease-in-out;
+
+            &:hover{
+                color: #85e3d8;
+            }
         }
     }
 }
@@ -42,11 +47,14 @@
 @media (min-width: 992px) {
     .hero {
         &__item {
-            gap: 60px;
+            gap: 40px;
         }
 
         &__title {
             gap: 35px;
+        }
+        &__button{
+            gap: 10px;
         }
     }
 }
