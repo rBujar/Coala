@@ -24,6 +24,38 @@
       </div>
     </div>
   </section>
+  <div class="default-bg">
+    <section class="preview container">
+      <div class="row">
+        <div class="preview__video col-12">
+          <h1>We've created the product that will help your startup look better</h1>
+          <video autoplay muted>
+            <source src="/src/assets/preview-video.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="preview__design col-12">
+          <div class="preview__item">
+            <div class="preview__image">
+            <img src="/src/assets/planet.svg" alt="planet">
+            </div>
+            <div class="preview__title">
+              <h4>Fell our design</h4>
+              <p class="text-xs text-regular">Startup Design Framework contains components which can easily be integrated into almost any design.</p>
+            </div>
+          </div>
+          <div class="preview__item">
+            <div class="preview__image">
+            <img src="/src/assets/colorful-core.svg" alt="colorful core">
+            </div>
+            <div class="preview__title">
+              <h4>High Resolution</h4>
+              <p class="text-xs text-regular">We did a 2.5K size high resolution photo that will suit even for a very web site.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
   <script type="module" src="http://localhost:5173/src/js/main.js"></script>
 </body>
 </html>
