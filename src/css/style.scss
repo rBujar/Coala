@@ -3,6 +3,7 @@
 @import url("./grid_system.scss");
 @import url("./reset.css");
 @import url("./sections/header.scss");
+@import url("./sections/product.scss");
 
 * {
     font-family: "Inter", sans-serif;
@@ -25,6 +26,10 @@
 
 .text-regular{
     font-weight: 400;
+}
+
+.text-medium {
+    font-weight: 500;
 }
 
 .text-bold{
@@ -89,6 +94,11 @@ li {
     }
 }
 
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 .container {
     width: 100%;
     padding-right: 15px;
@@ -131,6 +141,11 @@ li {
     h1{
         font-size: 72px;
         line-height: 86px;
+    }
+
+    section {
+        padding-top: 140px;
+        padding-bottom: 140px;
     }
 }
 
