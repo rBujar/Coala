@@ -6,6 +6,7 @@
 @import url("./sections/hero.scss");
 @import url("./coala-fonts.css");
 @import url("./sections/preview.scss");
+@import url("./sections/product.scss");
 
 * {
     font-family: "Inter", sans-serif;
@@ -94,6 +95,11 @@ li {
 
 .default-bg {
     background-color: var(--background-color-dark);
+}
+
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .container {
