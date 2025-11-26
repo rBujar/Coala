@@ -17,22 +17,3 @@ menuItem.forEach((item) => {
     }
   });
 });
-
-const container = document.querySelector(".header.container");
-
-function getLeftSide() {
-  let marginLeft = container.getBoundingClientRect().left;
-  if (window.innerWidth < 1200) {
-    headerMenu.style.paddingLeft = `${marginLeft}px`;
-  } else{
-    headerMenu.style.paddingLeft = "0px"
-  }
-}
-
-getLeftSide();
-
-window.addEventListener("resize", getLeftSide);
-
-const scrollButton = document.querySelector('.scrollUp')
-
-window.onscroll = function() {scrollFunction()}

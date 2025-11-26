@@ -120,6 +120,9 @@
 }
 
 @media (min-width: 1200px) {
+    .header__menu.container, .header__buttons.container{
+        max-width: initial;
+    }
     .header {
         &__hamburger {
             display: none;

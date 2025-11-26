@@ -3,7 +3,7 @@
         <h2>Coala</h2>
     </div>
     <nav class="header__nav">
-        <div class="header__buttons">
+        <div class="header__buttons container">
             <button class="header__buttons--signIn">
                 <p class="text-md text-regular">Sign in</p>
             </button>
@@ -11,7 +11,7 @@
                 <p class="text-md text-regular">Sing Up</p>
             </button>
         </div>
-        <ul class="header__menu">
+        <ul class="header__menu container">
             <li class="header__item"><a href="#">Home</a></li>
             <li class="header__item"><a href="#">Features</a></li>
             <li class="header__item"><a href="#">Blog</a></li>
