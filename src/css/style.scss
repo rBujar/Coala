@@ -7,6 +7,7 @@
 @import url("./coala-fonts.css");
 @import url("./sections/preview.scss");
 @import url("./sections/product.scss");
+@import url("./sections/build.scss");
 
 * {
     font-family: "Inter", sans-serif;
@@ -83,9 +84,6 @@ li {
     outline: none;
     border-radius: 50px;
     background-color: var(--action-color-primary);
-    color: var(--text-color-white);
-    transition: background-color 0.3s ease-in-out, color 0.5s ease-in-out;
-    cursor: pointer;
 
     &:hover {
         background-color: var(--action-color-lightPrimary);
@@ -95,14 +93,6 @@ li {
 
 .default-bg {
     background-color: var(--background-color-dark);
-    border: none;
-    outline: none;
-    border-radius: 100%;
-    transition: background-color 0.3s ease-in-out;
-
-    &:hover{
-        background-color: #85e3d8;
-    }
 }
 
 section {
