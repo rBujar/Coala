@@ -11,7 +11,7 @@
   <?php include 'components/header.php'?>
   <section class="promo container">
     <div class="row">
-      <div class="promo__content col-12">
+      <div class="promo__content col-12 col-xl-10 offset-xl-1">
         <div class="promo__icons">
           <i class="icon-code"></i>
           <i class="icon-heart"></i>

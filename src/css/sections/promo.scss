@@ -1,6 +1,7 @@
 .promo {
     &__content {
-        padding: 40px;
+        padding-top: 40px;
+        padding-bottom: 40px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -36,7 +37,8 @@
 @media (min-width: 768px) {
     .promo {
         &__content {
-            padding: 80px;
+        padding-top: 80px;
+        padding-bottom: 80px;
         }
     }
 }
