@@ -9,6 +9,7 @@
 @import url("./sections/product.scss");
 @import url("./sections/build.scss");
 @import url("./sections/promo.scss");
+@import url("./sections/footer.scss");
 
 * {
     font-family: "Inter", sans-serif;
@@ -97,6 +98,10 @@ li {
 
 .default-bg {
     background-color: var(--background-color-dark);
+}
+
+.default-bg {
+    background-color: var(--background-color-dark);  
 }
 
 .container {
