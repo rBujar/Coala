@@ -3,6 +3,9 @@
 @import url("./grid_system.scss");
 @import url("./reset.css");
 @import url("./sections/header.scss");
+@import url("./sections/promo.scss");
+@import url("./coala-fonts.css");
+@import url("./sections/footer.scss");
 
 * {
     font-family: "Inter", sans-serif;
@@ -74,19 +77,16 @@ li {
     outline: none;
     border-radius: 50px;
     background-color: var(--action-color-primary);
-
-}
-
-.default-bg{
-    background-color: var(--background-color-dark);
-    border: none;
-    outline: none;
-    border-radius: 100%;
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out, color 0.5s ease-in-out;
 
     &:hover{
         background-color: #85e3d8;
+        color: var(--text-color-grey);
     }
+}
+
+.default-bg {
+    background-color: var(--background-color-dark);  
 }
 
 .container {
