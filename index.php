@@ -9,7 +9,7 @@
   <title>Coala</title>
 </head>
 <body>
-  <?php include 'components/header.php' ?>
+  <?php include 'components/header.php'?>
   <section class="hero container">
     <div class="row">
       <div class="hero__item col-12 col-xl-8 offset-xl-2">
@@ -116,6 +116,22 @@
       </div>
     </section>
   </div>
+  <section class="promo container">
+    <div class="row">
+      <div class="promo__content col-12">
+        <div class="promo__icons">
+          <i class="icon-code"></i>
+          <i class="icon-heart"></i>
+          <i class="icon-star"></i>
+        </div>
+        <div class="promo__title">
+          <h1>Better Landing For Your Startup</h1>
+          <p class="text-xl text-medium">We have created a new product that will help designers, developers and companies create websites for their startups quickly and easily.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
   <script type="module" src="http://localhost:5173/src/js/main.js"></script>
 </body>
 </html>
