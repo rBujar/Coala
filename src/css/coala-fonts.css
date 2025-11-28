@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'coala';
-    src: url('../font/coala.svg?92970068#coala') format('svg');
+    src: url('../font/coala.svg?70592975#coala') format('svg');
   }
 }
 */
@@ -55,6 +55,7 @@
 }
 
 .icon-check:before { content: '\e800'; } /* '' */
+.icon-briefcase:before { content: '\e801'; } /* '' */
 .icon-star:before { content: '\e802'; } /* '' */
 .icon-play:before { content: '\e803'; } /* '' */
 .icon-search:before { content: '\e804'; } /* '' */
