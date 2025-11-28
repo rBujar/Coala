@@ -10,18 +10,18 @@
 <body>
     <main>
         <?php include '../components/header.php'?>
-        <!-- <section class="feature-hero container">
+        <section class="feature-hero container">
             <div class="row">
                 <div class="feature-hero__title">
                     <h1>Create Something Awesome</h1>
                     <p class="text-xl text-medium">We have created a new product that will help designers, developers and companies create websites for their startups quickly and easily.</p>
                 </div>
             </div>
-        </section> -->
+        </section>
         <div class="default-bg overlay">
             <section class="info container">
                 <div class="row">
-                    <div class="info__title col-12">
+                    <div class="info__title col-12 col-xl-8 offset-xl-2">
                         <span class="text-xs text-bold" >Easy-to-use</span>
                         <h1>Better Landing for Your Startup</h1>
                         <p class="text-xl text-regular">We have created a new product that will help designers, developers and companies create websites for their startups quickly and easily.</p>
