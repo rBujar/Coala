@@ -12,8 +12,8 @@
             </button>
         </div>
         <ul class="header__menu container">
-            <li class="header__item"><a href="#">Home</a></li>
-            <li class="header__item"><a href="#">Features</a></li>
+            <li class="header__item"><a href="../index.php">Home</a></li>
+            <li class="header__item"><a href="../pages/features.php">Features</a></li>
             <li class="header__item"><a href="#">Blog</a></li>
             <li class="header__item"><a href="#">Contact Us</a></li>
         </ul>
