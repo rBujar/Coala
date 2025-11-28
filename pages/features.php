@@ -12,7 +12,7 @@
 <body>
     <main>
         <?php include '../components/header.php'?>
-        <section class="feature-hero container">
+        <!-- <section class="feature-hero container">
             <div class="row">
                 <div class="feature-hero__title col-12 col-xl-8 offset-xl-2">
                     <h1>Create Something Awesome</h1>
@@ -35,6 +35,30 @@
                         <div class="feature-hero__content">
                             <h4>Designed to Impress</h4>
                             <p class="text-sm text-regular">Carefully crafted precise design, with harmo-nious typography and perfect padding around every component.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <section class="benefits container">
+            <div class="row">
+                <div class="benefits__item col-12">
+                    <h1>Our Benefits</h1>
+                    <div class="benefits__cards">
+                        <div class="benefits__card">
+                            <i class="icon-briefcase"></i>
+                            <h4 class="text-xl text-medium">Many Useful Components</h4>
+                            <p class="text-sm text-regular">Startup Framework contains components and complex blocks which can easily be integrated into almost any design. </p>
+                        </div>
+                        <div class="benefits__card">
+                            <i class="icon-compress"></i>
+                            <h4 class="text-xl text-medium">Responsive Layout</h4>
+                            <p class="text-sm text-regular">We haven't forgotten about responsive layout. With Startup Framework, you can create a website with full mobile support.</p>
+                        </div>
+                        <div class="benefits__card">
+                            <i class="icon-desktop"></i>
+                            <h4 class="text-xl text-medium">Retina Ready</h4>
+                            <p class="text-sm text-regular">Startup Framework works on devices supporting Retina Display. Feel the clarity in each pixel.</p>
                         </div>
                     </div>
                 </div>
