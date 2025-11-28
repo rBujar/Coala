@@ -3,6 +3,8 @@
 @import url("./grid_system.scss");
 @import url("./reset.css");
 @import url("./sections/header.scss");
+@import url("./coala-fonts.css");
+@import url("./feature-sections/info.scss");
 
 * {
     font-family: "Inter", sans-serif;
@@ -61,7 +63,7 @@
 
 h1{
     font-size: 32px;
-    line-height: 52px;
+    line-height: 40px;
 }
 
 a {
