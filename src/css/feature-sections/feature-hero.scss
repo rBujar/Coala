@@ -34,6 +34,10 @@
         align-items: center;
         justify-content: center;
         text-align: center;
+
+        h4{
+            text-transform: uppercase;
+        }
     }
 
     &__image {
