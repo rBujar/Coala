@@ -14,7 +14,7 @@
         <ul class="header__menu container">
             <li class="header__item"><a href="../index.php">Home</a></li>
             <li class="header__item"><a href="../pages/features.php">Features</a></li>
-            <li class="header__item"><a href="#">Contact Us</a></li>
+            <li class="header__item"><a href="../pages/contactUs.php">Contact Us</a></li>
             <li class="header__item"><a href="../pages/pricing.php">Pricing</a></li>
         </ul>
     </nav>
