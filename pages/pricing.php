@@ -166,10 +166,10 @@
         <div class="default-bg">
             <section class="client container">
                 <div class="row">
-                    <div class="client__title col-12 col-xl-10 offset-xl-1">
+                    <div class="client__title col-12 col-xl-8 offset-xl-2">
                         <h1>Our Happy Costumers</h1>
                     </div>
-                    <div class="client__cards col-12 col-xl-10 offset-xl-1">
+                    <div class="client__cards col-12 col-xl-8 offset-xl-2">
                         <div class="client__card">
                             <img src="../src/assets/client-1.svg" alt="client 1">
                             <div class="client__item">
