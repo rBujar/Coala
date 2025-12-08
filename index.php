@@ -58,7 +58,7 @@
   </div>
   <section class="product container">
     <div class="row">
-      <div class="product__title col-12">
+      <div class="product__title col-12 col-xl-8 offset-xl-2">
         <h1>Multi Useful Components</h1>
         <p class="text-xl text-medium">We have created a new product that will help designers, developers and companies create websites for their startups quickly and easily.</p>
       </div>
