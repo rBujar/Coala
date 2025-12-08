@@ -1,7 +1,4 @@
 .benefits {
-    padding-top: 50px;
-    padding-bottom: 50px;
-
     &__item {
         display: flex;
         flex-direction: column;
@@ -46,9 +43,6 @@
 
 @media (min-width: 992px) {
     .benefits {
-        padding-top: 100px;
-        padding-bottom: 100px;
-        
         &__item {
             gap: 50px;
         }
