@@ -84,6 +84,9 @@ li {
     outline: none;
     border-radius: 50px;
     background-color: var(--action-color-primary);
+    color: var(--text-color-white);
+    transition: background-color 0.3s ease-in-out, color 0.5s ease-in-out;
+    cursor: pointer;
 
     &:hover {
         background-color: var(--action-color-lightPrimary);
@@ -95,17 +98,17 @@ li {
     background-color: var(--background-color-dark);
 }
 
-section {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
 .container {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+}
+
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 @media (min-width: 576px) {
