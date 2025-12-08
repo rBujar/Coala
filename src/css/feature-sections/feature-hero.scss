@@ -1,7 +1,4 @@
 .feature-hero {
-    padding-top: 50px;
-    padding-bottom: 50px;
-
     h1,
     h4 {
         color: var(--text-color-main);
@@ -65,9 +62,6 @@
 
 @media (min-width: 992px) {
     .feature-hero {
-        padding-top: 100px;
-        padding-bottom: 100px;
-
         &__title {
             margin-bottom: 40px;
             gap: 30px;
