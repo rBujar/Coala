@@ -12,7 +12,7 @@
 <body>
     <main>
         <?php include '../components/header.php'?>
-        <!-- <section class="feature-hero container">
+        <section class="feature-hero container">
             <div class="row">
                 <div class="feature-hero__title col-12 col-xl-8 offset-xl-2">
                     <h1>Create Something Awesome</h1>
@@ -39,7 +39,7 @@
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
         <section class="benefits container">
             <div class="row">
                 <div class="benefits__item col-12">
