@@ -1,7 +1,4 @@
 .plan {
-    padding-top: 50px;
-    padding-bottom: 50px;
-
     &__title {
         display: flex;
         flex-direction: column;
@@ -101,9 +98,6 @@
 
 @media (min-width: 992px) {
     .plan {
-        padding-top: 120px;
-        padding-bottom: 120px;
-
         &__title {
             gap: 30px;
             margin-bottom: 50px;
