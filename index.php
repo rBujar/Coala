@@ -11,7 +11,7 @@
   <?php include 'components/header.php' ?>
   <section class="hero container">
     <div class="row">
-      <div class="hero__item col-12">
+      <div class="hero__item col-12 col-xl-8 offset-xl-2">
         <div class="hero__title">
           <h1>Startup Framework</h1>
           <p class="text-xl text-regular">We made it so beutiful and simple. It combines landings, pages, blogs and shop
