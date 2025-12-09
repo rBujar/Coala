@@ -16,6 +16,7 @@
 
 :root {
     --action-color-primary: #5bdacb;
+    --action-color-lightPrimary: #85e3d8;
     --action-color-secondary: #482be7;
     --action-color-third: #e93a7d;
     --text-color-main: #1e0e62;
@@ -85,7 +86,7 @@ li {
     cursor: pointer;
 
     &:hover {
-        background-color: #85e3d8;
+        background-color: var(--action-color-lightPrimary);
         color: var(--text-color-grey);
     }
 }
