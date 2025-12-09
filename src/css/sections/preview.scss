@@ -1,9 +1,8 @@
+@import "./_mixins.scss";
+
 .preview {
     &__video {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include position();
         gap: 25px;
         margin-bottom: 45px;
 
@@ -14,25 +13,18 @@
     }
 
     &__design {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include position($direction: row);
         gap: 10px;
     }
 
     &__item {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include position($align: left);
         gap: 10px;
     }
 
     &__title {
-        display: flex;
-        flex-direction: column;
+        @include position($align: left);
         color: var(--text-color-white);
-        align-items: left;
         gap: 10px;
 
         p {
