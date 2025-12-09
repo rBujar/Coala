@@ -11,5 +11,4 @@
   <?php include 'components/header.php' ?>
   <script type="module" src="http://localhost:5173/src/js/main.js"></script>
 </body>
-
 </html>
