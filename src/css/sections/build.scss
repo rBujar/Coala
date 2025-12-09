@@ -29,7 +29,7 @@
         color: var(--text-color-white);
     }
 
-    &__feature {
+    &__item {
         display: flex;
         align-items: start;
         justify-content: center;
@@ -65,7 +65,7 @@
             justify-content: space-between;
         }
 
-        &__feature {
+        &__item {
             p {
                 max-width: 300px;
             }
@@ -102,7 +102,7 @@
             flex-direction: column;
         }
 
-        &__feature {
+        &__item {
             p {
                 max-width: initial;
             }

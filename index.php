@@ -96,17 +96,17 @@
           <button class="green-btn">Learn More</button>
         </div>
         <div class="build__features col-12 col-xl-5 offset-xl-1">
-          <div class="build__feature">
+          <div class="build__item">
             <i class="icon-cloud"></i>
-            <div class="build__feature-title">
+            <div class="build__item-title">
               <h4>Splashproof Design</h4>
               <p class="text-sm text-regular">You'll get a description of each component and learn how to connect and
                 use them.</p>
             </div>
           </div>
-          <div class="build__feature">
+          <div class="build__item">
             <i class="icon-book"></i>
-            <div class="build__feature-title">
+            <div class="build__item-title">
               <h4>User Guide</h4>
               <p class="text-sm text-regular">At length one of them called out in a clear, polite, smooth dialect, not
                 unlike in sound.</p>
