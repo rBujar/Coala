@@ -5,6 +5,7 @@
 @import url("./sections/header.scss");
 @import url("./sections/hero.scss");
 @import url("./coala-fonts.css");
+@import url("./sections/preview.scss");
 
 * {
     font-family: "Inter", sans-serif;
@@ -33,7 +34,7 @@
     font-weight: 500;
 }
 
-.text-bold{
+.text-bold {
     font-weight: 700;
 }
 

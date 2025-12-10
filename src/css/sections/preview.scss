@@ -1,0 +1,87 @@
+@import "./_mixins.scss";
+
+.preview {
+    &__video {
+        @include position();
+        gap: 25px;
+        margin-bottom: 45px;
+
+        h1 {
+            text-align: center;
+            color: var(--text-color-white);
+        }
+    }
+
+    &__design {
+        @include position($direction: row);
+        gap: 10px;
+    }
+
+    &__item {
+        @include position($align: left);
+        gap: 10px;
+    }
+
+    &__title {
+        @include position($align: left);
+        color: var(--text-color-white);
+        gap: 10px;
+
+        p {
+            padding-right: 10px;
+        }
+
+        h4 {
+            text-transform: uppercase;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .preview {
+        &__video {
+            gap: 50px;
+            margin-bottom: 90px;
+        }
+
+        &__design {
+            gap: 25px;
+        }
+
+        &__item {
+            flex-direction: row;
+        }
+
+        &__title {
+            p {
+                max-width: 300px;
+                padding-right: 0px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .preview {
+        &__video {
+            video {
+                width: 800px;
+                height: 433px;
+            }
+        }
+
+        &__design {
+            gap: 35px;
+        }
+
+        &__item {
+            gap: 30px;
+        }
+
+        &__title {
+            p {
+                max-width: 245px;
+            }
+        }
+    }
+}
