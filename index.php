@@ -9,6 +9,7 @@
   <title>Coala</title>
 </head>
 <body>
+<<<<<<< Updated upstream
   <?php include 'components/header.php'?>
   <section class="hero container">
     <div class="row">
@@ -132,6 +133,8 @@
       </div>
     </div>
   </section>
+  <?php include 'components/footer.php'?>
+>>>>>>> Stashed changes
   <script type="module" src="http://localhost:5173/src/js/main.js"></script>
 </body>
 </html>
