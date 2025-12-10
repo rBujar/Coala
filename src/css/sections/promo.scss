@@ -1,0 +1,52 @@
+.promo {
+    &__content {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: var(--text-color-main);
+        gap: 20px;
+    }
+
+    &__icons {
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+
+        .icon-heart {
+            color: red;
+        }
+    }
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+
+        p {
+            color: var(--text-color-grey);
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .promo {
+        &__content {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .promo {
+        &__title {
+            gap: 30px;
+        }
+    }
+}

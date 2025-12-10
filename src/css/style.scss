@@ -8,6 +8,7 @@
 @import url("./sections/preview.scss");
 @import url("./sections/product.scss");
 @import url("./sections/build.scss");
+@import url("./sections/promo.scss");
 
 * {
     font-family: "Inter", sans-serif;
@@ -137,7 +138,6 @@ section {
     .container {
         max-width: 960px;
     }
-    
     h1{
         font-size: 58px;
         line-height: 70px;
