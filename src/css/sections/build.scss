@@ -1,0 +1,120 @@
+.build {
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 35px;
+
+        button {
+            padding: 15px 30px;
+        }
+    }
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: var(--text-color-white);
+        gap: 15px;
+    }
+
+    &__features {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        color: var(--text-color-white);
+    }
+
+    &__item {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        gap: 5px;
+
+        i {
+            font-size: 30px;
+        }
+
+        &-title {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            gap: 10px;
+            margin-top: 10px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .build {
+        &__content {
+            gap: 35px;
+            margin-bottom: 50px;
+        }
+
+        &__title {
+            gap: 25px;
+        }
+
+        &__features {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        &__item {
+            p {
+                max-width: 300px;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .build {
+        &__features {
+            justify-content: space-around;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .build {
+        &__content {
+            align-items: start;
+            padding-top: 20px;
+            margin-bottom: 0px;
+        }
+
+        &__title {
+            text-align: left;
+
+            h1 {
+                font-size: 42px;
+                line-height: 52px;
+            }
+        }
+
+        &__features {
+            flex-direction: column;
+        }
+
+        &__item {
+            p {
+                max-width: initial;
+            }
+
+            &-title {
+                gap: 15px;
+            }
+        }
+    }
+
+    .section {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
