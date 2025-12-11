@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,7 +8,6 @@
   <title>Coala</title>
 </head>
 <body>
-<<<<<<< Updated upstream
   <?php include 'components/header.php'?>
   <section class="hero container">
     <div class="row">
@@ -88,7 +86,7 @@
   <div class="default-bg">
     <section class="build container">
       <div class="row">
-        <div class="build__content col-12 col-xl-6">
+        <div class="build__content col-12 col-xl-5 offset-xl-1">
           <div class="build__title">
             <h1>Build Your Own Site Like a Big Company</h1>
             <p class="text-xl text-medium">We have created a new product that will help designers, developers and
@@ -119,7 +117,7 @@
   </div>
   <section class="promo container">
     <div class="row">
-      <div class="promo__content col-12 col-xl-10 offset-xl-1">
+      <div class="promo__content col-12 col-xl-8 offset-xl-2">
         <div class="promo__icons">
           <i class="icon-code"></i>
           <i class="icon-heart"></i>
@@ -134,7 +132,6 @@
     </div>
   </section>
   <?php include 'components/footer.php'?>
->>>>>>> Stashed changes
   <script type="module" src="http://localhost:5173/src/js/main.js"></script>
 </body>
 </html>

@@ -47,6 +47,10 @@
     .promo {
         &__title {
             gap: 30px;
+
+            h1{
+                font-size: 58px;
+            }
         }
     }
 }
