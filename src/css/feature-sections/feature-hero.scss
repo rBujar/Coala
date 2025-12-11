@@ -1,4 +1,5 @@
 .feature-hero {
+
     h1,
     h4 {
         color: var(--text-color-main);
@@ -9,12 +10,12 @@
     }
 
     &__title {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         text-align: center;
-        gap: 15px;
         margin-bottom: 30px;
+
+        h1 {
+            margin-bottom: 15px;
+        }
     }
 
     &__cards {
@@ -25,14 +26,10 @@
         gap: 15px;
     }
 
-    &__card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    &__item {
         text-align: center;
 
-        h4{
+        h4 {
             text-transform: uppercase;
         }
     }
@@ -43,19 +40,18 @@
     }
 
     &__content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
+        text-align: center;
         padding: 45px 50px;
         max-width: 370px;
         max-height: 210px;
         border: 2px solid rgba(235, 234, 237, 0.8);
         border-top: none;
-        border-radius: 0px 0px 10px 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
 
         h4 {
             color: var(--text-color-main);
+            margin-bottom: 20px;
         }
     }
 }
@@ -64,11 +60,11 @@
     .feature-hero {
         &__title {
             margin-bottom: 40px;
-            gap: 30px;
 
             h1 {
                 font-size: 42px;
                 line-height: 52px;
+                margin-bottom: 30px;
             }
         }
 

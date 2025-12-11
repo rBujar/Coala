@@ -17,7 +17,7 @@
                     <p class="text-xl text-medium">We have created a new product that will help designers, developers and companies create websites for their startups quickly and easily.</p>
                 </div>
                 <div class="feature-hero__cards col-12">
-                    <div class="feature-hero__card">
+                    <div class="feature-hero__item">
                         <div class="feature-hero__image">
                             <img src="../src/assets/pasta.svg" alt="pasta image">
                         </div>
@@ -26,7 +26,7 @@
                             <p class="text-sm text-regular">Generate leads and sales with our effective call-to-action blocks from buttons to testimonials to forms.</p>
                         </div>
                     </div>
-                    <div class="feature-hero__card">
+                    <div class="feature-hero__item">
                         <div class="feature-hero__image">
                             <img src="../src/assets/macaroni.svg" alt="macaroni image">
                         </div>
