@@ -29,6 +29,10 @@
         }
     }
 
+    &__content{
+        @include position();
+    }
+
     &__cards {
         @include position();
         gap: 20px;
