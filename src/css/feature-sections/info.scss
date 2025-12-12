@@ -1,3 +1,5 @@
+@import "../mixins.scss";
+
 .overlay {
     background-image: url("../../assets/pasta-background.svg");
     background-repeat: no-repeat;
@@ -9,12 +11,13 @@
     color: var(--text-color-white);
 
     &__title {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         text-align: center;
-        gap: 20px;
         margin-bottom: 35px;
+
+        h1 {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
 
         span {
             text-transform: uppercase;
@@ -26,21 +29,15 @@
         }
     }
 
-    &__content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 40px;
-    }
-
     &__cards {
-        display: flex;
-        flex-direction: column;
+        @include position();
         gap: 20px;
+        margin-bottom: 20px;
     }
 
     &__item {
         display: flex;
+        align-items: top;
 
         i {
             font-size: 20px;
@@ -66,7 +63,7 @@
         &__title {
             margin-bottom: 70px;
 
-            h1{
+            h1 {
                 font-size: 42px;
                 line-height: 52px;
             }
@@ -76,20 +73,16 @@
             }
         }
 
-        &__content {
-            gap: 80px;
-        }
-
         &__cards {
             flex-direction: row;
             gap: initial;
             justify-content: space-around;
             width: 100%;
+            margin-bottom: 80px;
         }
 
         &__item {
             max-width: 405px;
-            align-items: top;
 
             i {
                 font-size: 25px;
