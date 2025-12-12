@@ -48,28 +48,26 @@
                         <h1>Better Landing for Your Startup</h1>
                         <p class="text-xl text-regular">We have created a new product that will help designers, developers and companies create websites for their startups quickly and easily.</p>
                     </div>
-                    <div class="info__content col-12">
-                        <div class="info__cards">
-                            <div class="info__item">
+                    </div>
+                        <div class="row">
+                            <div class="info__item col-12 col-md-6 col-lg-5 col-xl-4 offset-xl-1">
                                 <i class="icon-book"></i>
                                 <div class="info__item-title">
                                     <h4>User Guide</h4>
                                     <p class="text-sm text-regular">You'll get a description of each component and learn how to connect and use them.</p>
                                 </div>
                             </div>
-                            <div class="info__item">
+                            <div class="info__item col-12 col-md-6 col-lg-5 offset-lg-2 col-xl-4 offset-xl-2">
                                 <i class="icon-youtube"></i>
                                 <div class="info__item-title">
                                     <h4>Video Tutorials</h4>
                                     <p class="text-sm text-regular">Video tutorials show you how to make a web site for your startup from design to code.</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="info__image">
+                            <div class="info__image col-12 col-xl-10 offset-xl-1">
                             <img src="/src/assets/macbook.svg" alt="macbook image">
                         </div>
-                    </div>
-                </div>
+                        </div>
             </section>
         </div>
         <section class="benefits container">
