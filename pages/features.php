@@ -50,14 +50,14 @@
                     </div>
                     <div class="info__content col-12">
                         <div class="info__cards">
-                            <div class="info__card">
+                            <div class="info__item">
                                 <i class="icon-book"></i>
                                 <div class="info__card-title">
                                     <h4>User Guide</h4>
                                     <p class="text-sm text-regular">You'll get a description of each component and learn how to connect and use them.</p>
                                 </div>
                             </div>
-                            <div class="info__card">
+                            <div class="info__item">
                                 <i class="icon-youtube"></i>
                                 <div class="info__card-title">
                                     <h4>Video Tutorials</h4>
