@@ -1,3 +1,5 @@
+@import "../mixins.scss";
+
 .client {
     &__title {
         color: var(--text-color-white);
@@ -7,16 +9,13 @@
     }
 
     &__cards {
-        display: flex;
+        @include position($direction: row);
         flex-wrap: wrap;
         gap: 20px;
-        justify-content: center;
-        align-items: center;
     }
 
-    &__card {
-        display: flex;
-        align-items: start;
+    &__item {
+        @include position($align: start, $direction: row);
         gap: 30px;
         padding: 35px 35px 30px 25px;
         border: 1px solid rgba(255, 255, 255, 0.5);
@@ -25,10 +24,8 @@
         height: 250px;
     }
 
-    &__item {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+    &__info {
+        @include position($align: start, $justify: space-between);
         height: 100%;
         color: var(--text-color-white);
 
@@ -49,7 +46,7 @@
             }
         }
 
-        &__card {
+        &__item {
             max-width: 400px;
         }
     }
@@ -61,8 +58,8 @@
             justify-content: left;
         }
 
-        &__item{
-            p{
+        &__info {
+            p {
                 font-size: 16px;
             }
         }
@@ -72,7 +69,7 @@
             gap: 30px;
         }
 
-        &__card {
+        &__item {
             max-width: 415px;
         }
     }

@@ -16,7 +16,7 @@
         <div class="default-bg">
             <section class="plan container">
                 <div class="row">
-                    <div class="plan__title col-12">
+                    <div class="plan__title col-12 col-lg-8 offset-lg-2">
                         <h1>Plans & Pricing</h1>
                         <p class="text-xl text-medium">Startup Framework is free forever you only pay for custom
                             domain hosting or to export your site.</p>
@@ -170,34 +170,34 @@
                         <h1>Our Happy Costumers</h1>
                     </div>
                     <div class="client__cards col-12 col-xl-8 offset-xl-2">
-                        <div class="client__card">
+                        <div class="client__item">
                             <img src="../src/assets/client-1.svg" alt="client 1">
-                            <div class="client__item">
+                            <div class="client__info">
                                 <p class="text-md text-medium">Get a fully retina ready site when you build with Startup
                                     Framework. Websites look sharper and more gorgeous on devices with retina display
                                     support</p>
                                 <span class="text-xs text-bold">Rayhan Curran</span>
                             </div>
                         </div>
-                        <div class="client__card">
+                        <div class="client__item">
                             <img src="../src/assets/client-2.svg" alt="client 2">
-                            <div class="client__item">
+                            <div class="client__info">
                                 <p class="text-md text-medium">As a business targeting high net worth individuals, we
                                     were looking for a slick, cool and mini-malistic design for our website</p>
                                 <span class="text-xs text-bold">Kayley Frame</span>
                             </div>
                         </div>
-                        <div class="client__card">
+                        <div class="client__item">
                             <img src="../src/assets/client-3.svg" alt="client 3">
-                            <div class="client__item">
+                            <div class="client__info">
                                 <p class="text-md text-medium">The most important part of the Startup Framework is the
                                     samples</p>
                                 <span class="text-xs text-bold">Gene Whitfield</span>
                             </div>
                         </div>
-                        <div class="client__card">
+                        <div class="client__item">
                             <img src="../src/assets/client-4.svg" alt="client 4">
-                            <div class="client__item">
+                            <div class="client__info">
                                 <p class="text-md text-medium">I've built my website with Startup just in one day, and
                                     it was ready-to-go. </p>
                                 <span class="text-xs text-bold">Allan Kim</span>
