@@ -13,7 +13,7 @@
         <div class="default-bg overlay">
             <section class="contact container">
                 <div class="row">
-                    <div class="contact__content col-12 col-lg-5 col-xl-5 offset-xl-1">
+                    <div class="contact__content col-12 col-lg-5 col-xl-4 offset-xl-1">
                     <div class="contact__title">
                         <h1>Let's Keep in Touch</h1>
                         <p class="text-xl text-medium">We have created a new product that will help designers, developers and companies create websites for their startups quickly and easily.</p>
