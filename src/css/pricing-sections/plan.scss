@@ -67,6 +67,7 @@
             border-radius: 50px;
             color: var(--text-color-white);
             transition: background-color 0.3s ease-in-out;
+            cursor: pointer;
 
             &:hover {
                 background-color: var(--action-color-third);
