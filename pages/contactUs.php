@@ -35,7 +35,7 @@
                     </div>
                     <div class="contact__formContainer col-12 col-lg-6 offset-lg-1 col-xl-5">
                         <div class="contact__formWrapper">
-                        <form action="" class="contact__form" >
+                        <form action="https://api.web3forms.com/submit" class="contact__form" method="POST" >
                             <div class="contact__fields">
                                 <div class="contact__field">
                             <label for="fname">First Name</label>
@@ -63,14 +63,16 @@
                             </div>
                             <button class="green-btn" type="submit"><p class="text-md text-regular">Send</p></button>
                             </div>
+                            <input type="hidden" name="access_key" value="89f07b6e-8fdd-422b-8a2b-7fe7ddc27c0d">
                         </form>
                         </div>
                     </div>
                 </div>
             </section>
         </div>
-        <script type="module" src="http://localhost:5173/src/js/main.js"></script>
+        <script type="module" src="http://localhost:5173/src/js/form.js"></script>
     </main>
 </body>
-
 </html>
+
+<!-- access key: 89f07b6e-8fdd-422b-8a2b-7fe7ddc27c0d -->
