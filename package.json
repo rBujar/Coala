@@ -5,11 +5,20 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "vite build && node build-html.js",
+    "build:assets": "vite build",
+    "build:html": "node build-html.js",
+    "preview": "vite preview",
+    "php": "php -S localhost:8000",
+    "dev:all": "concurrently \"npm run dev\" \"npm run php\""
   },
   "devDependencies": {
+    "concurrently": "^9.1.2",
+    "glob": "^11.0.0",
     "sass": "^1.94.2",
     "vite": "^7.2.2"
+  },
+  "engines": {
+    "node": ">=20.0.0"
   }
 }

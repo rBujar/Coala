@@ -1,10 +1,12 @@
+<?php require_once 'vite-helper.php'; ?>
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="http://localhost:5173/src/css/style.scss" />
-  <link rel="shortcut icon" type="image/x-icon" href="/src/assets/favicon.ico" />
+  <?php viteClient(); ?>
+  <?php viteEntry('src/css/style.scss'); ?>
+  <link rel="shortcut icon" type="image/x-icon" href="<?php echo viteAsset('src/assets/favicon.ico'); ?>" />
   <title>Coala</title>
 </head>
 <body>
@@ -132,6 +134,6 @@
     </div>
   </section>
   <?php include 'components/footer.php'?>
-  <script type="module" src="http://localhost:5173/src/js/main.js"></script>
+  <?php viteEntry('src/js/main.js'); ?>
 </body>
 </html>
