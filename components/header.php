@@ -8,7 +8,7 @@
                 <p class="text-md text-regular">Sign in</p>
             </button>
             <button class="green-btn header__buttons--signUp">
-                <p class="text-md text-regular">Sing Up</p>
+                <p class="text-sm text-regular">Sing Up</p>
             </button>
         </div>
         <ul class="header__menu container">

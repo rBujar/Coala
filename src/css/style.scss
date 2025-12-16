@@ -88,12 +88,11 @@ li {
     border-radius: 50px;
     background-color: var(--action-color-primary);
     color: var(--text-color-white);
-    transition: background-color 0.3s ease-in-out, color 0.5s ease-in-out;
+    transition: background-color 0.1s ease-in-out;
     cursor: pointer;
 
     &:hover {
         background-color: var(--action-color-lightPrimary);
-        color: var(--text-color-grey);
     }
 }
 

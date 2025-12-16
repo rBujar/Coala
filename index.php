@@ -20,7 +20,7 @@
             screens. It is definitely the tool you need in your collection!</p>
         </div>
         <div class="hero__button">
-          <button class="header__button green-btn">Purchase Now for $248</button>
+          <button class="header__button green-btn"><p class="text-md text-regular">Purchase Now for $248</p></button>
           <a href="#" class="text-md text-medium">Learn More</a>
         </div>
       </div>

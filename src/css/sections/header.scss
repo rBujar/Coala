@@ -122,14 +122,16 @@
 @media (min-width: 1200px) {
     .header__menu.container, .header__buttons.container{
         max-width: initial;
+        padding: 0px;
+        margin: 0px;
     }
     .header {
+        position: relative;
+        padding-top: 0px;
+        margin-top: 20px;
+        
         &__hamburger {
             display: none;
-        }
-
-        &__logo {
-            width: 55%;
         }
 
         &__nav {
@@ -145,12 +147,16 @@
         }
 
         &__menu {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            bottom: 0px;
+            right: 0px;
             justify-content: center;
             align-items: center;
             order: 1;
-
             flex-direction: row;
-            justify-content: center;
+            gap: 30px;
         }
 
         &__item {
