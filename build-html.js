@@ -32,6 +32,14 @@ function startPHPServer() {
     }
   });
   
+  // Force kill after 5 minutes (safety timeout)
+  setTimeout(() => {
+    if (server && !server.killed) {
+      console.log('⚠️  Force killing PHP server (timeout)');
+      server.kill('SIGKILL');
+    }
+  }, 300000);
+  
   return new Promise(resolve => setTimeout(() => resolve(server), 2000));
 }
 
@@ -106,13 +114,21 @@ async function build() {
 
   } catch (error) {
     console.error('\n❌ Build failed:', error.message);
+    if (phpServer) {
+      phpServer.kill('SIGTERM');
+    }
     process.exit(1);
   } finally {
     if (phpServer) {
-      phpServer.kill();
+      phpServer.kill('SIGTERM');
+      // Give it a moment to clean up
+      await new Promise(resolve => setTimeout(resolve, 500));
       console.log('🛑 PHP server stopped\n');
     }
   }
+  
+  // Ensure process exits
+  process.exit(0);
 }
 
 build().catch((error) => {
