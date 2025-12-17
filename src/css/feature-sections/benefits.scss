@@ -6,6 +6,8 @@
 
         h1 {
             margin-bottom: 50px;
+            color: var(--text-color-main);
+
         }
     }
 
@@ -38,6 +40,13 @@
 
 @media (min-width: 992px) {
     .benefits {
+        &__content{
+            h1{
+                font-size: 42px;
+            }
+            
+        }
+
         &__cards {
             flex-direction: row;
             gap: initial;
