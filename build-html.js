@@ -76,7 +76,12 @@ function fixAssetPaths(html) {
     .replace(/src="\/dist\//g, 'src="/')
     // Convert .php links to .html for production
     .replace(/href="([^"]*?)\.php"/g, 'href="$1.html"')
-    .replace(/href='([^']*?)\.php'/g, "href='$1.html'");
+    .replace(/href='([^']*?)\.php'/g, "href='$1.html'")
+    // Fix relative paths (../) to absolute paths
+    .replace(/href="\.\.\/index\.html"/g, 'href="/"')
+    .replace(/href="\.\.\/pages\//g, 'href="/pages/')
+    .replace(/href='\.\.\/index\.html'/g, "href='/'")
+    .replace(/href='\.\.\/pages\//g, "href='/pages/");
 }
 
 // Copy assets to dist/assets
