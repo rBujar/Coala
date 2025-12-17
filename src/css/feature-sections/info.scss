@@ -1,0 +1,86 @@
+@import "../mixins.scss";
+
+.overlay {
+    background-image: url("../../assets/pasta-background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.info {
+    padding-bottom: 0px;
+    color: var(--text-color-white);
+
+    &__title {
+        text-align: center;
+        margin-bottom: 35px;
+
+        h1 {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        span {
+            text-transform: uppercase;
+        }
+
+        span,
+        p {
+            opacity: 0.8;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: top;
+        margin-bottom: 20px;
+
+        i {
+            font-size: 20px;
+            margin-top: 5px;
+
+            &.icon-book {
+                color: var(--action-color-primary);
+            }
+
+            &.icon-youtube {
+                color: #ea3223;
+            }
+        }
+
+        &-title {
+            padding: 5px;
+        }
+    }
+
+    &__image {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .info {
+        &__title {
+            margin-bottom: 70px;
+
+            h1 {
+                font-size: 42px;
+                line-height: 52px;
+            }
+
+            p {
+                margin-top: 10px;
+            }
+        }
+
+        &__item {
+            margin-bottom: 50px;
+
+            i {
+                font-size: 25px;
+                margin: 0px;
+            }
+        }
+    }
+}
