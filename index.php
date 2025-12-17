@@ -75,7 +75,7 @@
             <p class="text-sm text-regular">Of course we haven't forgotten about the responsive layout. Full mobile support.</p>
           </div>
           <div class="product__component">
-            <h4>Full Contol</h4>
+            <h4>Full Control</h4>
             <p class="text-sm text-regular">Easily change and tweak your content when you need to, however you want. No more third party vendor-lock-in.</p>
           </div>
         </div>

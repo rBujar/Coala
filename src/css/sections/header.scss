@@ -1,7 +1,7 @@
+@import "../mixins.scss";
+
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include position($direction: row, $justify: space-between);
     padding-top: 20px;
 
     &__logo {
@@ -9,6 +9,8 @@
             font-size: 24px;
             color: var(--text-color-main);
         }
+
+        cursor: pointer;
     }
 
     &__hamburger {
@@ -50,10 +52,8 @@
     }
 
     &__nav {
+        @include position($align: left);
         position: fixed;
-        display: flex;
-        flex-direction: column;
-        align-items: left;
         width: 100%;
         background-color: #3d1fbf;
         top: 55px;
@@ -74,9 +74,7 @@
     }
 
     &__menu {
-        display: flex;
-        flex-direction: column;
-        align-items: left;
+        @include position($align: left);
         gap: 30px;
     }
 
@@ -93,8 +91,13 @@
         }
     }
 
+    &__content {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
     &__buttons {
-        padding-left: 15px;
         display: flex;
         align-items: center;
         gap: 10px;
@@ -120,16 +123,13 @@
 }
 
 @media (min-width: 1200px) {
-    .header__menu.container, .header__buttons.container{
+    .header__menu.container {
         max-width: initial;
         padding: 0px;
         margin: 0px;
     }
+
     .header {
-        position: relative;
-        padding-top: 0px;
-        margin-top: 20px;
-        
         &__hamburger {
             display: none;
         }
@@ -144,17 +144,12 @@
             background-color: transparent;
             justify-content: space-between;
             padding-top: 0px;
+            width: initial;
         }
 
         &__menu {
-            position: absolute;
-            left: 0px;
-            top: 0px;
-            bottom: 0px;
-            right: 0px;
             justify-content: center;
             align-items: center;
-            order: 1;
             flex-direction: row;
             gap: 30px;
         }
@@ -170,10 +165,6 @@
         }
 
         &__buttons {
-            justify-content: flex-end;
-            padding-left: 0px;
-            order: 2;
-
             &--signIn {
                 &:hover {
                     color: var(--text-color-main);
