@@ -66,6 +66,8 @@ function fixAssetPaths(html) {
     .replace(/<script[^>]*@vite\/client[^>]*><\/script>\s*/g, '')
     // Fix localhost URLs
     .replace(/http:\/\/localhost:\d+\//g, '/')
+    // Fix double slashes in src paths
+    .replace(/\/src\/\/assets\//g, '/assets/')
     // Fix relative paths
     .replace(/\.\.\/src\/assets\//g, '/assets/')
     .replace(/\/src\/assets\//g, '/assets/')

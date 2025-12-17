@@ -80,7 +80,7 @@
           </div>
         </div>
         <div class="product__phone">
-          <img src="/src//assets/phone.svg" alt="phone image">
+          <img src="/src/assets/phone.svg" alt="phone image">
         </div>
       </div>
     </div>
