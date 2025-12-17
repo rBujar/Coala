@@ -1,15 +1,37 @@
 import { exec } from 'child_process';
-import { writeFileSync, mkdirSync, existsSync, readFileSync } from 'fs';
+import { writeFileSync, mkdirSync, existsSync } from 'fs';
 import { dirname, join } from 'path';
 import { glob } from 'glob';
+import { promisify } from 'util';
 
+const execAsync = promisify(exec);
 const PHP_PORT = 9999;
 const OUTPUT_DIR = 'dist';
+
+// Check if PHP is available
+async function checkPHP() {
+  try {
+    await execAsync('php --version');
+    return true;
+  } catch (error) {
+    console.error('❌ PHP is not installed or not in PATH');
+    console.error('   Install PHP to build HTML files from PHP sources');
+    return false;
+  }
+}
 
 // Start PHP server
 function startPHPServer() {
   console.log('🚀 Starting PHP server...\n');
-  const server = exec(`php -S localhost:${PHP_PORT}`);
+  const server = exec(`php -S localhost:${PHP_PORT} 2>&1`);
+  
+  // Log PHP server errors
+  server.stderr?.on('data', (data) => {
+    if (!data.includes('Development Server')) {
+      console.error('PHP Error:', data.toString());
+    }
+  });
+  
   return new Promise(resolve => setTimeout(() => resolve(server), 2000));
 }
 
@@ -18,9 +40,13 @@ async function fetchPage(path) {
   console.log(`📄 ${path} → ${path.replace('.php', '.html')}`);
   try {
     const response = await fetch(`http://localhost:${PHP_PORT}${path}`);
-    return response.ok ? await response.text() : null;
+    if (!response.ok) {
+      console.error(`   ⚠️  HTTP ${response.status}: ${response.statusText}`);
+      return null;
+    }
+    return await response.text();
   } catch (error) {
-    console.error(`❌ Failed: ${path}`);
+    console.error(`   ❌ Failed: ${error.message}`);
     return null;
   }
 }
@@ -31,19 +57,33 @@ function fixAssetPaths(html) {
     // Remove Vite client (dev only)
     .replace(/<script[^>]*@vite\/client[^>]*><\/script>\s*/g, '')
     // Fix localhost URLs
-    .replace(/http:\/\/localhost:5173\//g, '/')
+    .replace(/http:\/\/localhost:\d+\//g, '/')
     // Fix relative paths
     .replace(/\.\.\/src\/assets\//g, '/assets/')
-    .replace(/\/src\/assets\//g, '/assets/');
+    .replace(/\/src\/assets\//g, '/assets/')
+    // Fix dist paths (already in dist, so remove /dist prefix)
+    .replace(/href="\/dist\//g, 'href="/')
+    .replace(/src="\/dist\//g, 'src="/');
 }
 
 // Main build function
 async function build() {
   console.log('🏗️  Building HTML from PHP...\n');
 
-  const phpServer = await startPHPServer();
+  // Check if PHP is available
+  const hasPHP = await checkPHP();
+  if (!hasPHP) {
+    console.log('\n⚠️  Skipping HTML generation (PHP not available)');
+    console.log('   Assets have been built to dist/assets/');
+    console.log('   You can manually copy .php files or install PHP to generate HTML\n');
+    process.exit(0);
+  }
 
+  let phpServer;
+  
   try {
+    phpServer = await startPHPServer();
+
     // Find all PHP files (except components and helpers)
     const phpFiles = await glob('**/*.php', {
       ignore: ['node_modules/**', 'components/**', 'vite-helper.php', 'dist/**']
@@ -64,10 +104,18 @@ async function build() {
 
     console.log('\n✨ Build complete!\n');
 
+  } catch (error) {
+    console.error('\n❌ Build failed:', error.message);
+    process.exit(1);
   } finally {
-    phpServer.kill();
-    console.log('🛑 PHP server stopped\n');
+    if (phpServer) {
+      phpServer.kill();
+      console.log('🛑 PHP server stopped\n');
+    }
   }
 }
 
-build().catch(console.error);
+build().catch((error) => {
+  console.error('Fatal error:', error);
+  process.exit(1);
+});

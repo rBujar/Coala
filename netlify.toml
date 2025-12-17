@@ -1,0 +1,10 @@
+[build]
+  # Don't build on Netlify - use GitHub Actions instead
+  command = "echo 'Build happens via GitHub Actions'"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# This file is here for Netlify to recognize the site
+# Actual builds happen via GitHub Actions which has PHP

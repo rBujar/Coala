@@ -1,70 +1,66 @@
-# Coala - PHP Development → Static HTML Production
+# Coala - PHP to Static HTML
 
-Build modern websites using PHP for development (with component includes) and deploy as static HTML.
+Develop with PHP (components, includes) → Build to static HTML → Deploy anywhere.
 
 ## 🚀 Quick Start
 
 ```bash
-# Install
 npm install
-
-# Develop
 npm run dev:all
-
-# Build
-npm run build
 ```
 
 Open: **http://localhost:8000**
 
-## 📖 How It Works
+## 📦 Build
 
-### Development
-- Write PHP files with `<?php include ?>` for components
-- Get hot module replacement (HMR) for CSS/JS
-- Run on local PHP server
+```bash
+npm run build
+```
 
-### Production
-- Run `npm run build`
-- PHP files → HTML files
-- CSS/JS optimized and minified
-- Deploy `dist/` folder anywhere (no PHP needed!)
+Output: `dist/` folder (static HTML + optimized assets)
 
-## 📁 Project Structure
+## 🌐 Deploy
+
+### Auto Deploy (GitHub Actions)
+Push to main → Builds automatically → Deploys to Netlify
+
+**Setup:**
+1. Add GitHub Secrets:
+   - `NETLIFY_AUTH_TOKEN` (from Netlify user settings)
+   - `NETLIFY_SITE_ID` (from site settings)
+2. Push to main
+3. Done! ✅
+
+### Manual Deploy
+```bash
+npm run deploy
+```
+
+## 📁 Structure
 
 ```
-Source (Development):
-├── index.php           # Use PHP includes
-├── pages/
-│   ├── features.php
-│   └── ...
-├── components/
-│   ├── header.php      # Reusable components
-│   └── footer.php
-└── src/
-    ├── css/            # SCSS files
-    ├── js/             # JavaScript
-    └── assets/         # Images, fonts
-
-Build (Production):
-└── dist/
-    ├── index.html      # Static HTML
-    ├── pages/
-    │   └── features.html
-    └── assets/         # Optimized CSS/JS/images
+├── index.php              # Pages (use PHP includes)
+├── pages/*.php            # More pages
+├── components/*.php       # Reusable components
+├── src/
+│   ├── css/              # SCSS styles
+│   ├── js/               # JavaScript
+│   └── assets/           # Images, fonts
+└── dist/                 # Built site (after npm run build)
+    ├── *.html            # Static HTML
+    └── assets/           # Optimized CSS/JS
 ```
 
 ## 🛠️ Commands
 
 | Command | Description |
 |---------|-------------|
-| `npm run dev` | Start Vite dev server |
-| `npm run php` | Start PHP server |
-| `npm run dev:all` | Start both servers |
+| `npm run dev:all` | Start dev servers (Vite + PHP) |
 | `npm run build` | Build static site |
+| `npm run deploy` | Build + deploy to Netlify |
 | `npm run preview` | Preview production build |
 
-## 📝 Usage in PHP Files
+## 📝 PHP Template
 
 ```php
 <?php require_once 'vite-helper.php'; ?>
@@ -73,11 +69,12 @@ Build (Production):
 <head>
   <?php viteClient(); ?>
   <?php viteEntry('src/css/style.scss'); ?>
+  <title>Page Title</title>
 </head>
 <body>
   <?php include 'components/header.php'; ?>
   
-  <h1>Your content</h1>
+  <main>Your content</main>
   
   <?php include 'components/footer.php'; ?>
   <?php viteEntry('src/js/main.js'); ?>
@@ -85,36 +82,24 @@ Build (Production):
 </html>
 ```
 
-## 🌐 Deploy
+## 🎯 How It Works
 
-1. Run `npm run build`
-2. Upload `dist/` folder to:
-   - Netlify
-   - Vercel
-   - GitHub Pages
-   - Any static host
+**Development:**
+- PHP files with includes/components
+- Vite dev server for HMR
+- Fast development workflow
 
-No PHP required in production!
+**Production:**
+- PHP → HTML conversion
+- CSS/JS optimized & minified
+- Pure static site output
+- Deploy anywhere (no PHP needed)
 
 ## 🔧 Requirements
 
 - Node.js 20+
-- PHP 7.4+ (for development only)
-- npm
-
-## ⚙️ How It Works
-
-The `vite-helper.php` automatically detects your environment:
-
-**Development:** Loads assets from Vite dev server (HMR enabled)  
-**Production:** Loads optimized assets from `dist/` folder
-
-The `build-html.js` script:
-1. Starts temporary PHP server
-2. Fetches each PHP page as rendered HTML
-3. Fixes asset paths for production
-4. Saves as `.html` files in `dist/`
+- PHP 7.4+ (dev only)
 
 ---
 
-**Develop with PHP. Deploy as HTML. Best of both worlds!** 🎉
+**Best of both worlds: PHP flexibility + static site speed!** 🚀

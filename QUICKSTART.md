@@ -1,41 +1,41 @@
 # 🚀 Quick Start
 
-## Setup (First Time)
-
+## Install
 ```bash
 npm install
 ```
 
-## Development
-
+## Develop
 ```bash
 npm run dev:all
 ```
-
 Open: **http://localhost:8000**
 
-## Build for Production
-
+## Build
 ```bash
 npm run build
 ```
 
-Output: `dist/` folder (ready to deploy!)
-
-## Deploy
-
-Upload the `dist/` folder to any static host:
-- Netlify (drag & drop)
-- Vercel
-- GitHub Pages
-- AWS S3
+## Deploy to Netlify
+```bash
+npm run deploy
+```
 
 ---
 
-## That's It!
+## Auto Deploy Setup
 
-**Develop:** Edit PHP files with component includes  
-**Build:** `npm run build` creates static HTML  
-**Deploy:** Upload `dist/` folder anywhere  
+1. **Add GitHub Secrets:**
+   - `NETLIFY_AUTH_TOKEN`
+   - `NETLIFY_SITE_ID`
 
-No PHP needed in production! 🎉
+2. **Push to main:**
+   ```bash
+   git push origin main
+   ```
+
+3. **Done!** Builds & deploys automatically ✅
+
+---
+
+That's it! 🎉
