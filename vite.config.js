@@ -5,6 +5,7 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     manifest: true,
+    assetsDir: 'assets',
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'src/js/main.js'),
@@ -13,7 +14,9 @@ export default defineConfig({
     },
   },
   
-  publicDir: 'src/assets',
+  // Don't copy public dir, we'll handle assets via imports
+  publicDir: false,
+  base: '/',
   
   server: {
     port: 5173,

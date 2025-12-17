@@ -1,5 +1,5 @@
 import { exec } from 'child_process';
-import { writeFileSync, mkdirSync, existsSync } from 'fs';
+import { writeFileSync, mkdirSync, existsSync, cpSync } from 'fs';
 import { dirname, join } from 'path';
 import { glob } from 'glob';
 import { promisify } from 'util';
@@ -76,9 +76,24 @@ function fixAssetPaths(html) {
     .replace(/src="\/dist\//g, 'src="/');
 }
 
+// Copy assets to dist/assets
+function copyAssets() {
+  console.log('📦 Copying assets...\n');
+  const assetsSource = 'src/assets';
+  const assetsDest = join(OUTPUT_DIR, 'assets');
+  
+  if (existsSync(assetsSource)) {
+    cpSync(assetsSource, assetsDest, { recursive: true });
+    console.log('✅ Assets copied to dist/assets\n');
+  }
+}
+
 // Main build function
 async function build() {
   console.log('🏗️  Building HTML from PHP...\n');
+  
+  // Copy assets first
+  copyAssets();
 
   // Check if PHP is available
   const hasPHP = await checkPHP();
