@@ -73,7 +73,10 @@ function fixAssetPaths(html) {
     .replace(/\/src\/assets\//g, '/assets/')
     // Fix dist paths (already in dist, so remove /dist prefix)
     .replace(/href="\/dist\//g, 'href="/')
-    .replace(/src="\/dist\//g, 'src="/');
+    .replace(/src="\/dist\//g, 'src="/')
+    // Convert .php links to .html for production
+    .replace(/href="([^"]*?)\.php"/g, 'href="$1.html"')
+    .replace(/href='([^']*?)\.php'/g, "href='$1.html'");
 }
 
 // Copy assets to dist/assets
