@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'coala';
-    src: url('../font/coala.svg?70592975#coala') format('svg');
+    src: url('../font/coala.svg?77606415#coala') format('svg');
   }
 }
 */
@@ -68,8 +68,12 @@
 .icon-phone:before { content: '\e80b'; } /* '' */
 .icon-arrow-down:before { content: '\e80c'; } /* '' */
 .icon-heart:before { content: '\e80d'; } /* '' */
+.icon-squares:before { content: '\e80e'; } /* '' */
+.icon-reload:before { content: '\e80f'; } /* '' */
+.icon-doc:before { content: '\e810'; } /* '' */
 .icon-twitter:before { content: '\f099'; } /* '' */
 .icon-facebook:before { content: '\f09a'; } /* '' */
+.icon-columns:before { content: '\f0db'; } /* '' */
 .icon-mail:before { content: '\f0e0'; } /* '' */
 .icon-building:before { content: '\f0f7'; } /* '' */
 .icon-desktop:before { content: '\f108'; } /* '' */
@@ -77,4 +81,5 @@
 .icon-youtube:before { content: '\f16a'; } /* '' */
 .icon-graduation:before { content: '\f19d'; } /* '' */
 .icon-google:before { content: '\f1a0'; } /* '' */
+.icon-database:before { content: '\f1c0'; } /* '' */
 .icon-toggle:before { content: '\f205'; } /* '' */
