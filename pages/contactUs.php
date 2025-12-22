@@ -70,6 +70,37 @@
                 </div>
             </section>
         </div>
+        <section class="questions container">
+            <div class="row">
+                <h1 class="col-12">Your questions answered</h1>
+                <div class="questions__cards col-12 col-xl-10 offset-xl-1">
+                    <div class="questions__item">
+                        <h4>How Startup Framework works?</h4>
+                        <p class="text-sm text-regular">The Generator App is an online tool that helps you to export ready-made templates ready to work as your future website. It helps you to combine slides, panels and other components and export it as a set of static files: HTML/CSS/JS.</p>
+                    </div>
+                    <div class="questions__item">
+                        <h4>Do you provide hosting with Startup Framework?</h4>
+                        <p class="text-sm text-regular">No, hosting is on you. You upload the result on your hosting via FTP or using other tools you like. You can use any server, just make sure it have a PHP installed in case if you need a contact form.</p>
+                    </div>
+                    <div class="questions__item">
+                        <h4>What exactly am I buying?</h4>
+                        <p class="text-sm text-regular">You're buying an access to the Startup Generator app to export ready-made templates with the rest source files included. It's an online tool, not a software. For more details about generator's workflow watch this tutorial?</p>
+                    </div>
+                    <div class="questions__item">
+                        <h4>Are you planning to update Startup Framework?</h4>
+                        <p class="text-sm text-regular">We are! Here is the changelog of changes we've made after the release. Thanks our clients who helped us to improve our product.</p>
+                    </div>
+                    <div class="questions__item">
+                        <h4>How Startup Framework works?</h4>
+                        <p class="text-sm text-regular">The Generator App is an online tool that helps you to export ready-made templates ready to work as your future website. It helps you to combine slides, panels and other components and export it as a set of static files: HTML/CSS/JS.</p>
+                    </div>
+                    <div class="questions__item">
+                        <h4>Do you provide support for customers?</h4>
+                        <p class="text-sm text-regular">Yes, we are. Please use our contact us form to chat with us. We DO NOT provide product support via Facebook, Twitter or others sources.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
         <script type="module" src="http://localhost:5173/src/js/form.js"></script>
     </main>
 </body>
