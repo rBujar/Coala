@@ -1,21 +1,14 @@
 .hero {
     &__item {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include position();
         text-align: center;
         gap: 40px;
     }
 
     &__title {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-
         h1 {
             color: var(--text-color-main);
+            margin-bottom: 35px;
         }
 
         p {
@@ -36,7 +29,7 @@
             color: var(--action-color-primary);
             transition: color 0.3s ease-in-out;
 
-            &:hover{
+            &:hover {
                 color: var(--action-color-lightPrimary);
             }
         }
@@ -49,10 +42,7 @@
             gap: 40px;
         }
 
-        &__title {
-            gap: 35px;
-        }
-        &__button{
+        &__button {
             gap: 10px;
         }
     }

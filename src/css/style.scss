@@ -1,18 +1,19 @@
+@import "mixins.scss";
+@import "./grid_system.scss";
+@import "./reset.css";
+@import "./sections/header.scss";
+@import "./sections/hero.scss";
+@import "./coala-fonts.css";
+@import "./sections/preview.scss";
+@import "./sections/product.scss";
+@import "./sections/build.scss";
+@import "./sections/promo.scss";
+@import "./sections/footer.scss";
+@import "./feature-sections/feature-hero.scss";
+@import "./feature-sections/info.scss";
+@import "./feature-sections/benefits.scss";
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-@import url("./grid_system.scss");
-@import url("./reset.css");
-@import url("./sections/header.scss");
-@import url("./sections/hero.scss");
-@import url("./coala-fonts.css");
-@import url("./sections/preview.scss");
-@import url("./sections/product.scss");
-@import url("./sections/build.scss");
-@import url("./sections/promo.scss");
-@import url("./sections/footer.scss");
-@import url("./feature-sections/feature-hero.scss");
-@import url("./feature-sections/info.scss");
-@import url("./feature-sections/benefits.scss");
 
 * {
     font-family: "Inter", sans-serif;
