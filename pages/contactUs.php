@@ -38,10 +38,10 @@
                         <form action="https://api.web3forms.com/submit" class="contact__form" method="POST" >
                             <div class="contact__fields">
                                 <div class="contact__field">
-                            <label for="fname">First Name</label>
+                            <label for="fname">Your Name</label>
                             <input type="text" id="fname" name="firstname" placeholder="First name">
                             </div>
-                            <div class="contact__field">
+                            <div class="contact__field contact__field--budget">
                             <label for="budget">Budget</label>
                             <select name="budget" id="budget">
                                 <option value="250">250$</option>
@@ -52,7 +52,7 @@
                             </div>
                             <div class="contact__fields">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="example@gmail.com">
+                            <input type="email" id="email" name="email" placeholder="name@mail.com">
                             <label for="message">Your Message</label>
                             <textarea name="message" id="message" placeholder="Message"></textarea>
                             </div>
@@ -105,5 +105,3 @@
     </main>
 </body>
 </html>
-
-<!-- access key: 89f07b6e-8fdd-422b-8a2b-7fe7ddc27c0d -->

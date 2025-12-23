@@ -1,5 +1,3 @@
-@import "../mixins.scss";
-
 .contact {
     &__content {
         @include position();
@@ -11,8 +9,8 @@
         text-align: center;
         gap: 15px;
         margin-bottom: 50px;
-        
-        h1{
+
+        h1 {
             margin-bottom: 30px;
         }
     }
@@ -40,7 +38,7 @@
     &__form {
         display: flex;
         flex-direction: column;
-        padding: 60px 25px;
+        padding: 60px 40px;
         gap: 35px;
 
         label {
@@ -68,13 +66,21 @@
         select,
         textarea {
             width: 100%;
-            border: 2px solid rgba(160, 160, 160, 0.5);
+            border: 2px solid rgba(160, 160, 160, 0.4);
             outline: none;
             padding: 12px 10px;
         }
 
         input[type="text"] {
             max-width: 200px;
+        }
+
+        input,
+        textarea {
+            &::placeholder {
+                color: var(--text-color-grey);
+                padding: 10px;
+            }
         }
 
         input {
@@ -86,6 +92,7 @@
         select {
             font-weight: 500;
             color: var(--text-color-main);
+            width: 100px;
         }
     }
 
@@ -118,10 +125,14 @@
         input {
             width: fit-content;
             accent-color: var(--action-color-primary);
-            padding: 5px;
             border-radius: 6px;
+            padding: 5px;
             border: none;
             outline: none;
+
+            &:checked {
+                padding: 5px;
+            }
         }
 
         label {
@@ -135,8 +146,18 @@
     }
 
     button {
-        padding: 5px 25px;
+        padding: 12px 40px;
         color: var(--text-color-white);
+    }
+}
+
+@media (min-width: 576px) {
+    .contact {
+        &__form {
+            select {
+                width: 150px;
+            }
+        }
     }
 }
 
