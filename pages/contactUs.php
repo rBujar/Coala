@@ -1,10 +1,12 @@
+<?php require_once '../vite-helper.php'; ?>
 <!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="http://localhost:5173/src/css/style.scss" />
-    <link rel="shortcut icon" type="image/x-icon" href="/src/assets/favicon.ico" />
+    <?php viteClient(); ?>
+    <?php viteEntry('src/css/style.scss'); ?>
+    <link rel="shortcut icon" type="image/x-icon" href="<?php echo viteAsset('src/assets/favicon.ico'); ?>" />
     <title>Coala</title>
 </head>
 <body>
@@ -13,7 +15,7 @@
         <div class="default-bg overlay">
             <section class="contact container">
                 <div class="row">
-                    <div class="contact__content col-12 col-lg-5 col-xl-4 offset-xl-1">
+                    <div class="contact__content col-12 col-lg-5 col-xl-4 offset-xl-1" data-aos="fade" data-aos-delay="100">
                     <div class="contact__title">
                         <h1>Let's Keep in Touch</h1>
                         <p class="text-xl text-medium">We have created a new product that will help designers, developers and companies create websites for their startups quickly and easily.</p>
@@ -33,7 +35,7 @@
                         </div>
                     </div>
                     </div>
-                    <div class="contact__formContainer col-12 col-lg-6 offset-lg-1 col-xl-5">
+                    <div class="contact__formContainer col-12 col-lg-6 offset-lg-1 col-xl-5" data-aos="fade" data-aos-delay="150">
                         <div class="contact__formWrapper">
                         <form action="https://api.web3forms.com/submit" class="contact__form" method="POST" >
                             <div class="contact__fields">
@@ -72,8 +74,8 @@
         </div>
         <section class="questions container">
             <div class="row">
-                <h1 class="col-12">Your questions answered</h1>
-                <div class="questions__cards col-12 col-xl-10 offset-xl-1">
+                <h1 class="col-12" data-aos="fade" data-aos-delay="100">Your questions answered</h1>
+                <div class="questions__cards col-12 col-xl-10 offset-xl-1" data-aos="fade" data-aos-delay="150">
                     <div class="questions__item">
                         <h4>How Startup Framework works?</h4>
                         <p class="text-sm text-regular">The Generator App is an online tool that helps you to export ready-made templates ready to work as your future website. It helps you to combine slides, panels and other components and export it as a set of static files: HTML/CSS/JS.</p>
@@ -102,7 +104,7 @@
             </div>
         </section>
         <?php include '../components/footer.php'?>
-        <script type="module" src="http://localhost:5173/src/js/form.js"></script>
+        <?php viteEntry('src/js/main.js'); ?>
     </main>
 </body>
 </html>

@@ -13,7 +13,7 @@
   <?php include 'components/header.php'?>
   <section class="hero container">
     <div class="row">
-      <div class="hero__item col-12 col-xl-8 offset-xl-2">
+      <div class="hero__item col-12 col-xl-8 offset-xl-2" data-aos="fade" data-aos-delay="100">
         <div class="hero__title">
           <h1>Startup Framework</h1>
           <p class="text-xl text-regular">We made it so beutiful and simple. It combines landings, pages, blogs and shop
@@ -29,13 +29,13 @@
   <div class="default-bg">
     <section class="preview container">
       <div class="row">
-        <div class="preview__video col-12">
+        <div class="preview__video col-12" data-aos="fade" data-aos-delay="100">
           <h1>We've created the product that will help your startup look better</h1>
-          <video autoplay muted>
+          <video autoplay muted data-aos="fade" data-aos-delay="150">
             <source src="/src/assets/preview-video.mp4" type="video/mp4">
           </video>
         </div>
-        <div class="preview__design col-12">
+        <div class="preview__design col-12" data-aos="fade" data-aos-delay="200">
           <div class="preview__item">
             <div class="preview__image">
             <img src="/src/assets/planet.svg" alt="planet">
@@ -60,12 +60,12 @@
   </div>
   <section class="product container">
     <div class="row">
-      <div class="product__title col-12 col-xl-8 offset-xl-2">
+      <div class="product__title col-12 col-xl-8 offset-xl-2" data-aos="fade" data-aos-delay="100">
         <h1>Multi Useful Components</h1>
         <p class="text-xl text-medium">We have created a new product that will help designers, developers and companies create websites for their startups quickly and easily.</p>
       </div>
       <div class="product__item col-12">
-        <div class="product__components">
+        <div class="product__components" data-aos="fade" data-aos-delay="150">
           <div class="product__component">
             <h4>Retina Ready</h4>
             <p class="text-sm text-regular">Startup Framework works fine on devices supporting Retina Desplay. Feel the clarity!</p>
@@ -79,7 +79,7 @@
             <p class="text-sm text-regular">Easily change and tweak your content when you need to, however you want. No more third party vendor-lock-in.</p>
           </div>
         </div>
-        <div class="product__phone">
+        <div class="product__phone" data-aos="fade" data-aos-delay="200">
           <img src="/src/assets/phone.svg" alt="phone image">
         </div>
       </div>
@@ -88,7 +88,7 @@
   <div class="default-bg">
     <section class="build container">
       <div class="row">
-        <div class="build__content col-12 col-xl-5 offset-xl-1">
+        <div class="build__content col-12 col-xl-5 offset-xl-1" data-aos="fade" data-aos-delay="100">
           <div class="build__title">
             <h1>Build Your Own Site Like a Big Company</h1>
             <p class="text-xl text-medium">We have created a new product that will help designers, developers and
@@ -96,7 +96,7 @@
           </div>
           <button class="green-btn">Learn More</button>
         </div>
-        <div class="build__features col-12 col-xl-5 offset-xl-1">
+        <div class="build__features col-12 col-xl-5 offset-xl-1" data-aos="fade" data-aos-delay="150">
           <div class="build__item">
             <i class="icon-cloud"></i>
             <div class="build__item-title">
@@ -120,12 +120,12 @@
   <section class="promo container">
     <div class="row">
       <div class="promo__content col-12 col-xl-8 offset-xl-2">
-        <div class="promo__icons">
+        <div class="promo__icons" data-aos="fade" data-aos-delay="100">
           <i class="icon-code"></i>
           <i class="icon-heart"></i>
           <i class="icon-star"></i>
         </div>
-        <div class="promo__title">
+        <div class="promo__title" data-aos="fade" data-aos-delay="150">
           <h1>Better Landing For Your Startup</h1>
           <p class="text-xl text-medium">We have created a new product that will help designers, developers and companies create websites for their startups quickly and easily.
           </p>
