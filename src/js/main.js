@@ -1,3 +1,6 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const hamburger = document.querySelector(".header__hamburger");
 const headerMenu = document.querySelector(".header__nav");
 const menuItem = document.querySelectorAll(".header__item");
@@ -16,4 +19,10 @@ menuItem.forEach((item) => {
       document.body.classList.toggle("no-scroll");
     }
   });
+});
+
+AOS.init({
+  duration: 700,
+  offset: 50,
+  once: true,
 });
