@@ -1,11 +1,14 @@
 @import "../mixins.scss";
 
+.dark-bg {
+    background-color: var(--text-color-main);
+}
+
 .client {
     &__title {
         color: var(--text-color-white);
         padding-bottom: 20px;
-        display: flex;
-        justify-content: center;
+        text-align: center;
     }
 
     &__cards {
@@ -18,7 +21,7 @@
         @include position($align: start, $direction: row);
         gap: 30px;
         padding: 35px 35px 30px 25px;
-        border: 1px solid rgba(255, 255, 255, 0.5);
+        @include border();
         border-radius: 10px;
         max-width: 470px;
         height: 250px;
@@ -30,8 +33,9 @@
         color: var(--text-color-white);
 
         span {
-            opacity: 0.5;
+            opacity: 0.3;
             text-transform: uppercase;
+            letter-spacing: 2px;
         }
     }
 }
@@ -43,6 +47,7 @@
 
             h1 {
                 font-size: 42px;
+                font-weight: 52px;
             }
         }
 
@@ -55,7 +60,7 @@
 @media (min-width: 1200px) {
     .client {
         &__title {
-            justify-content: left;
+            text-align: left;
         }
 
         &__info {

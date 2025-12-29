@@ -37,7 +37,6 @@
             span {
                 font-size: 16px;
                 font-weight: 400;
-                height: fit-content;
             }
         }
     }
@@ -48,6 +47,10 @@
             align-items: center;
             gap: 5px;
             margin-bottom: 28px;
+
+            i {
+                color: var(--action-color-primary);
+            }
         }
 
         .not-checked {
@@ -96,6 +99,11 @@
         &__title {
             gap: 30px;
             margin-bottom: 50px;
+
+            h1 {
+                font-size: 42px;
+                line-height: 52px;
+            }
         }
     }
 }
