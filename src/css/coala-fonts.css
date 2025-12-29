@@ -70,9 +70,6 @@
 .icon-reload:before { content: '\e80f'; } /* '' */
 .icon-doc:before { content: '\e810'; } /* '' */
 .icon-check:before { content: '\e811'; } /* '' */
-.icon-squares:before { content: '\e80e'; } /* '' */
-.icon-reload:before { content: '\e80f'; } /* '' */
-.icon-doc:before { content: '\e810'; } /* '' */
 .icon-twitter:before { content: '\f099'; } /* '' */
 .icon-facebook:before { content: '\f09a'; } /* '' */
 .icon-columns:before { content: '\f0db'; } /* '' */
