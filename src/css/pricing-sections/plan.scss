@@ -16,7 +16,7 @@
         color: var(--text-color-white);
         padding: 40px;
         border-radius: 10px;
-        border: 2px solid rgba(255, 255, 255, 0.5);
+        @include border();
 
         ul {
             padding: 0px;
