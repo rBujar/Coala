@@ -116,7 +116,7 @@
         }
 
         &--signUp {
-            padding: 5px 15px;
+            padding: 10px 20px;
             color: var(--text-color-white);
         }
     }
@@ -166,6 +166,8 @@
         }
 
         &__buttons {
+            gap: 20px;
+            
             &--signIn {
                 &:hover {
                     color: var(--text-color-main);
