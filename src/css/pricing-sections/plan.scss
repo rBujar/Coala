@@ -1,0 +1,109 @@
+@import "../mixins.scss";
+
+.plan {
+    &__title {
+        text-align: center;
+        color: var(--text-color-white);
+        margin-bottom: 25px;
+
+        h1 {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__item {
+        overflow: hidden;
+        color: var(--text-color-white);
+        padding: 40px;
+        border-radius: 10px;
+        @include border();
+
+        ul {
+            padding: 0px;
+        }
+    }
+
+    &__type {
+        margin-bottom: 40px;
+        margin-left: 20px;
+
+        h2 {
+            display: flex;
+            gap: 10px;
+            font-weight: 700;
+            font-size: 58px;
+            margin-top: 20px;
+
+            span {
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    &__features {
+        li {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-bottom: 28px;
+
+            i {
+                color: var(--action-color-primary);
+            }
+        }
+
+        .not-checked {
+            opacity: 0.5;
+            padding-left: 25px;
+        }
+    }
+
+    &__button {
+        width: 100%;
+
+        button {
+            background-color: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            padding: 15px 60px;
+            max-width: 230px;
+            border-radius: 50px;
+            color: var(--text-color-white);
+            transition: background-color 0.3s ease-in-out;
+            cursor: pointer;
+
+            &:hover {
+                background-color: var(--action-color-third);
+                border: none;
+                outline: none;
+            }
+        }
+    }
+
+    .swiper-slide-active .plan__item {
+        button {
+            background-color: var(--action-color-third);
+            border: none;
+            outline: none;
+            transition: background-color 0.3s ease-in-out;
+
+            &:hover {
+                background-color: #ee689b;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .plan {
+        &__title {
+            gap: 30px;
+            margin-bottom: 50px;
+
+            h1 {
+                font-size: 42px;
+                line-height: 52px;
+            }
+        }
+    }
+}
