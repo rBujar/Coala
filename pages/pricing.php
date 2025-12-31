@@ -1,22 +1,22 @@
+<?php require_once '../vite-helper.php'; ?>
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="http://localhost:5173/src/css/style.scss" />
-    <link rel="shortcut icon" type="image/x-icon" href="/src/assets/favicon.ico" />
+    <?php viteClient(); ?>
+    <?php viteEntry('src/css/style.scss'); ?>
+    <link rel="shortcut icon" type="image/x-icon" href="<?php echo viteAsset('src/assets/favicon.ico'); ?>" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <title>Coala</title>
 </head>
-
 <body>
     <main>
         <?php include '../components/header.php' ?>
         <div class="default-bg">
             <section class="plan container">
                 <div class="row">
-                    <div class="plan__title col-12 col-lg-8 offset-lg-2">
+                    <div class="plan__title col-12 col-lg-8 offset-lg-2" data-aos="fade" data-aos-delay="100">
                         <h1>Plans & Pricing</h1>
                         <p class="text-xl text-medium">Startup Framework is free forever you only pay for custom
                             domain hosting or to export your site.</p>
@@ -166,10 +166,10 @@
         <div class="dark-bg">
             <section class="client container">
                 <div class="row">
-                    <div class="client__title col-12 col-xl-8 offset-xl-2">
+                    <div class="client__title col-12 col-xl-8 offset-xl-2" data-aos="fade" data-aos-delay="100">
                         <h1>Our Happy Clients</h1>
                     </div>
-                    <div class="client__cards col-12 col-xl-8 offset-xl-2">
+                    <div class="client__cards col-12 col-xl-8 offset-xl-2" data-aos="fade" data-aos-delay="150">
                         <div class="client__item">
                             <img src="../src/assets/client-1.svg" alt="client 1">
                             <div class="client__info">
@@ -207,8 +207,8 @@
                 </div>
             </section>
         </div>
-        <script type="module" src="http://localhost:5173/src/js/pricing.js"></script>
+        <?php include '../components/footer.php'?>
+        <?php viteEntry('src/js/pricing.js');?>
     </main>
 </body>
-
 </html>
