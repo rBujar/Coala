@@ -1,0 +1,90 @@
+@import "../mixins.scss";
+
+.team {
+    &__title {
+        margin-bottom: 65px;
+
+        h2 {
+            color: var(--text-color-main);
+            font-size: 36px;
+            font-weight: 800;
+            line-height: 42px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: var(--text-color-grey);
+        }
+    }
+
+    &__cards {
+        @include position();
+        gap: 35px;
+    }
+
+    &__item {
+        @include position($align: left);
+        border: none;
+        outline: none;
+        border-radius: 8px;
+        -webkit-box-shadow: 0px 10px 20px -10px #000000;
+        box-shadow: 0px 10px 20px -10px #000000;
+        max-width: 320px;
+
+        img {
+            padding: 16px 16px 0px 16px;
+        }
+    }
+
+    &__info {
+        text-align: left;
+        padding: 24px 16px;
+
+        h4 {
+            color: var(--text-color-main);
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        p {
+            margin-top: 10px;
+        }
+
+        span,
+        p {
+            color: var(--text-color-grey);
+        }
+    }
+
+    &__socials {
+        @include position($direction: row, $justify: start);
+        gap: 10px;
+        margin-top: 15px;
+        color: rgba(0, 0, 0, 0.6);
+
+        i {
+            font-size: 22px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .team {
+        &__cards {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .team {
+        &__cards {
+            justify-content: space-between;
+        }
+
+        &__item {
+            max-width: 295px;
+        }
+    }
+}
