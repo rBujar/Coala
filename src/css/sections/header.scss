@@ -7,6 +7,7 @@
     &__logo {
         h2 {
             font-size: 24px;
+            line-height: 30px;
             color: var(--text-color-main);
         }
 
@@ -17,6 +18,7 @@
         display: block;
         cursor: pointer;
         z-index: 3;
+        padding-bottom: 5px;
 
         &--bar {
             display: block;
@@ -52,10 +54,10 @@
     }
 
     &__nav {
-        @include position($align: left);
+        @include position($align: left, $justify: top);
         position: fixed;
         width: 100%;
-        background-color: #3d1fbf;
+        background-color: var(--text-color-main);
         top: 55px;
         right: 0;
         transform: translateX(100%);
@@ -82,11 +84,13 @@
         padding-left: 15px;
 
         a {
-            color: var(--text-color-grey);
-            transition: color 0.2s ease-in-out;
+            color: var(--text-color-white);
+            font-weight: 600;
+            transition: transform 0.2s ease-in-out;
+            cursor: pointer;
 
             &:hover {
-                color: var(--text-color-white);
+                transform: scale(1.2);
             }
         }
     }
@@ -98,7 +102,7 @@
     }
 
     &__buttons {
-        display: flex;
+        display: none;
         align-items: center;
         gap: 10px;
 
@@ -120,6 +124,10 @@
             color: var(--text-color-white);
         }
     }
+}
+
+.no-scroll{
+    overflow: hidden;
 }
 
 @media (min-width: 1200px) {
@@ -166,6 +174,7 @@
         }
 
         &__buttons {
+            display: flex;
             gap: 20px;
             
             &--signIn {
