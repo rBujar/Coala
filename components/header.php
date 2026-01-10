@@ -7,6 +7,7 @@
             <li class="header__item"><a href="../pages/features.php">Features</a></li>
             <li class="header__item"><a href="../pages/contactUs.php">Contact Us</a></li>
             <li class="header__item"><a href="../pages/pricing.php">Pricing</a></li>
+            <li class="header__item"><a href="../pages/aboutUs.php">About Us</a></li>
         </ul>
     </nav>
     <div class="header__content">
