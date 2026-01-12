@@ -1,0 +1,68 @@
+@import "../mixins.scss";
+
+.values {
+    padding-top: 0px;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    &__cards {
+        @include position();
+        gap: 35px;
+    }
+
+    &__item {
+        @include position($align: start, $justify: start);
+        padding: 24px 16px;
+        max-width: 295px;
+        min-height: 180px;
+        border: none;
+        outline: none;
+        border-radius: 8px;
+        box-shadow: -1px 9px 15px -4px rgba(0, 0, 0, 0.72);
+        -webkit-box-shadow: -1px 9px 15px -4px rgba(0, 0, 0, 0.72);
+        -moz-box-shadow: -1px 9px 15px -4px rgba(0, 0, 0, 0.72);
+        transition: transform 0.2s ease-in-out;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        p {
+            color: var(--text-color-grey);
+        }
+    }
+
+    &__title {
+        @include position($direction: row, $justify: left, $align: top);
+        gap: 10px;
+
+        h4 {
+            color: var(--text-color-main);
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        i {
+            font-size: 20px;
+            opacity: 0.5;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .values {
+        h2 {
+            margin-bottom: 50px;
+        }
+
+        &__cards {
+            flex-direction: row;
+            gap: initial;
+            justify-content: space-around;
+        }
+    }
+}

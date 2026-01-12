@@ -83,5 +83,8 @@
 .icon-graduation:before { content: '\f19d'; } /* '' */
 .icon-google:before { content: '\f1a0'; } /* '' */
 .icon-database:before { content: '\f1c0'; } /* '' */
+.icon-code_file:before { content: '\f1c9'; } /* '' */
+.icon-support:before { content: '\f1cd'; } /* '' */
+.icon-send:before { content: '\f1d9'; } /* '' */
 .icon-toggle:before { content: '\f205'; } /* '' */
 .icon-square:before { content: '\f24d'; } /* '' */
