@@ -1,0 +1,103 @@
+@import "../mixins.scss";
+
+.h2-style{
+    color: var(--text-color-main);
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 42px;
+    margin-bottom: 20px;
+}
+
+.team {
+    &__title {
+        margin-bottom: 65px;
+
+        p {
+            color: var(--text-color-grey);
+        }
+    }
+
+    &__cards {
+        @include position();
+        gap: 35px;
+    }
+
+    &__item {
+        @include position($align: left);
+        border: none;
+        outline: none;
+        border-radius: 8px;
+        -webkit-box-shadow: 0px 17px 30px -5px rgba(0, 0, 0, 0.7);
+        box-shadow: 0px 17px 30px -5px rgba(0, 0, 0, 0.7);
+        max-width: 320px;
+        transition: transform 0.2s ease-in-out;
+
+        &:hover{
+            transform: scale(1.05);
+        }
+
+        img {
+            padding: 16px 16px 0px 16px;
+        }
+    }
+
+    &__info {
+        text-align: left;
+        padding: 24px 16px;
+
+        h4 {
+            color: var(--text-color-main);
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        p {
+            margin-top: 10px;
+        }
+
+        span,
+        p {
+            color: var(--text-color-grey);
+        }
+    }
+
+    &__socials {
+        @include position($direction: row, $justify: start);
+        gap: 10px;
+        margin-top: 15px;
+        color: rgba(0, 0, 0, 0.6);
+
+        i {
+            font-size: 22px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .team {
+        &__cards {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .team {
+        &__cards {
+            justify-content: space-between;
+        }
+
+        &__item {
+            max-width: 250px;
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    .team{
+        &__item{
+            max-width: 295px;
+        }
+    }
+}
