@@ -208,7 +208,7 @@
             </section>
         </div>
         <?php include '../components/footer.php'?>
-        <?php viteEntry('src/js/pricing.js');?>
+        <?php viteEntry('src/js/main.js'); ?>
     </main>
 </body>
 </html>
