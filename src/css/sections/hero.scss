@@ -1,11 +1,10 @@
 .hero {
     &__item {
-        @include position();
         text-align: center;
-        gap: 40px;
     }
 
     &__title {
+        margin-bottom: 40px;
         h1 {
             color: var(--text-color-main);
             margin-bottom: 35px;
@@ -17,8 +16,7 @@
     }
 
     &__button {
-        display: flex;
-        flex-direction: column;
+        @include position();
         gap: 5px;
 
         button {

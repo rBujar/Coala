@@ -64,17 +64,17 @@
         <h1>Multi Useful Components</h1>
         <p class="text-xl text-medium">We have created a new product that will help designers, developers and companies create websites for their startups quickly and easily.</p>
       </div>
-      <div class="product__item col-12">
-        <div class="product__components" data-aos="fade" data-aos-delay="150">
-          <div class="product__component">
+      <div class="product__content col-12">
+        <div class="product__features" data-aos="fade" data-aos-delay="150">
+          <div class="product__item">
             <h4>Retina Ready</h4>
             <p class="text-sm text-regular">Startup Framework works fine on devices supporting Retina Desplay. Feel the clarity!</p>
           </div>
-          <div class="product__component">
+          <div class="product__item">
             <h4>Responsive Layout</h4>
             <p class="text-sm text-regular">Of course we haven't forgotten about the responsive layout. Full mobile support.</p>
           </div>
-          <div class="product__component">
+          <div class="product__item">
             <h4>Full Control</h4>
             <p class="text-sm text-regular">Easily change and tweak your content when you need to, however you want. No more third party vendor-lock-in.</p>
           </div>

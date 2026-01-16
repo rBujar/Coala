@@ -1,19 +1,13 @@
 .promo {
     &__content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         color: var(--text-color-main);
-        gap: 20px;
     }
 
     &__icons {
         font-size: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include position($direction: row);
         gap: 30px;
+        margin-bottom: 20px;
 
         .icon-heart {
             color: red;
