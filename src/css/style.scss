@@ -16,12 +16,14 @@
 @import "./contact-sections/questions.scss";
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-@import url("./pricing-sections/plan.scss");
-@import url("./pricing-sections/client.scss");
-@import url("./feature-sections/layers.scss");
-@import url("./feature-sections/components.scss");
-@import url("./aboutUs-sections/team.scss");
-@import url("./aboutUs-sections/values.scss");
+@import "./pricing-sections/plan.scss";
+@import "./pricing-sections/client.scss";
+@import "./feature-sections/layers.scss";
+@import "./feature-sections/components.scss";
+@import "./aboutUs-sections/team.scss";
+@import "./aboutUs-sections/values.scss";
+@import "./sections/navigation.scss";
+
 
 * {
     font-family: "Inter", sans-serif;

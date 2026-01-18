@@ -1,5 +1,15 @@
 @import "../mixins.scss";
 
+.header-bg {
+    position: fixed;
+    background-color: white;
+    z-index: 5;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
 .header {
     @include position($direction: row, $justify: space-between);
     padding-top: 20px;
@@ -126,7 +136,7 @@
     }
 }
 
-.no-scroll{
+.no-scroll {
     overflow: hidden;
 }
 
@@ -139,6 +149,7 @@
 
     .header {
         padding-bottom: 10px;
+
         &__hamburger {
             display: none;
         }
@@ -160,7 +171,6 @@
             justify-content: center;
             align-items: center;
             flex-direction: row;
-            gap: 30px;
         }
 
         &__item {
@@ -176,7 +186,7 @@
         &__buttons {
             display: flex;
             gap: 20px;
-            
+
             &--signIn {
                 &:hover {
                     color: var(--text-color-main);
