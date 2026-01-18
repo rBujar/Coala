@@ -1,3 +1,4 @@
+<div class="header-bg">
 <header class="header container">
     <div class="header__logo">
        <a href="../index.php"><h2>Coala</h2></a>
@@ -26,3 +27,4 @@
     </div>
     </div>
 </header>
+</div>
