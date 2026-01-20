@@ -23,25 +23,26 @@
                     <div class="contact__infos">
                         <div class="contact__info">
                             <i class="icon-phone"></i>
-                            <span class="text-sm text-regular">+1 555 505 5050</span>
+                            <a class="text-sm text-regular" href="tel:+38344100200">+383 44 100 200</a>
                         </div>
                         <div class="contact__info">
                             <i class="icon-mail"></i>
-                            <span class="text-sm text-regular">info@designmodo.com</span>
+                            <a class="text-sm text-regular" href="mailto:info@designmodo.com">info@designmodo.com</a>
                         </div>
                         <div class="contact__info">
                             <i class="icon-building"></i>
-                            <span class="text-sm text-regular">San Francisco, CA560 Bush St & 20th Ave, Apt5 San Francisco, 230909</span>
+                            <a class="text-sm text-regular" href="https://www.google.com/maps/d/u/0/viewer?ie=UTF8&hl=en&msa=0&z=13&mid=1WawOkbEXKmzdkQvMYwzFaG54Wbk&ll=37.77822553190797%2C-122.44467599999999" target="_blank">San Francisco, CA560 Bush St & 20th Ave, Apt5 San Francisco, 230909</a>
                         </div>
                     </div>
                     </div>
                     <div class="contact__formContainer col-12 col-lg-6 offset-lg-1 col-xl-5" data-aos="fade" data-aos-delay="150">
                         <div class="contact__formWrapper">
+                            <div id="error"></div>
                         <form action="https://api.web3forms.com/submit" class="contact__form" method="POST" >
                             <div class="contact__fields">
                                 <div class="contact__field">
                             <label for="fname">Your Name</label>
-                            <input type="text" id="fname" name="firstname" placeholder="First name">
+                            <input type="text" id="fname" name="firstname" placeholder="First name" required>
                             </div>
                             <div class="contact__field contact__field--budget">
                             <label for="budget">Budget</label>
@@ -54,9 +55,9 @@
                             </div>
                             <div class="contact__fields">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="name@mail.com">
+                            <input type="email" id="email" name="email" placeholder="name@mail.com" required>
                             <label for="message">Your Message</label>
-                            <textarea name="message" id="message" placeholder="Message"></textarea>
+                            <textarea name="message" id="message" placeholder="Message" required></textarea>
                             </div>
                             <div class="contact__fields">
                             <div class="contact__checkbox">
