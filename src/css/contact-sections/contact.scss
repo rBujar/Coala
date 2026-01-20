@@ -26,6 +26,10 @@
         display: flex;
         gap: 15px;
         padding-right: 20px;
+
+        a{
+            color: var(--text-color-white);
+        }
     }
 
     &__formWrapper {

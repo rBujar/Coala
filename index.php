@@ -134,6 +134,10 @@
     </div>
   </section>
   <?php include 'components/footer.php'?>
+  <div class="navigation container" >
+        <button id="navButton" class="green-btn">
+        <i class="icon-arrow_up"></i>
+      </div>
   <?php viteEntry('src/js/main.js'); ?>
 </body>
 </html>

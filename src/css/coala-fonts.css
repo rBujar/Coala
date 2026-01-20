@@ -54,6 +54,7 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
+.icon-arrow_up:before { content: '\e800'; } /* '' */
 .icon-briefcase:before { content: '\e801'; } /* '' */
 .icon-star:before { content: '\e802'; } /* '' */
 .icon-play:before { content: '\e803'; } /* '' */

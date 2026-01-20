@@ -70,25 +70,9 @@
             border-radius: 50px;
             color: var(--text-color-white);
             transition: background-color 0.3s ease-in-out;
-            cursor: pointer;
 
             &:hover {
                 background-color: var(--action-color-thirdLight);
-                border: none;
-                outline: none;
-            }
-        }
-    }
-
-    .swiper-slide-active .plan__item {
-        button {
-            background-color: var(--action-color-third);
-            border: none;
-            outline: none;
-            transition: background-color 0.3s ease-in-out;
-
-            &:hover {
-                background-color: #ee689b;
             }
         }
     }

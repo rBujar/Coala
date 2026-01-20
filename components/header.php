@@ -1,3 +1,4 @@
+<div class="header-bg">
 <header class="header container">
     <div class="header__logo">
        <a href="../index.php"><h2>Coala</h2></a>
@@ -13,7 +14,7 @@
     <div class="header__content">
     <div class="header__buttons">
             <button class="header__buttons--signIn">
-                <p class="text-md text-regular">Sign in</p>
+                <a class="text-md text-regular">Sign in</a>
             </button>
             <button class="green-btn header__buttons--signUp">
                 <p class="text-sm text-regular">Sing Up</p>
@@ -26,3 +27,4 @@
     </div>
     </div>
 </header>
+</div>

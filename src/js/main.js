@@ -49,3 +49,19 @@ const swiper = new Swiper(".swiper-plans", {
       },
     },
   });
+
+const scrollButton = document.getElementById('navButton')
+
+window.onscroll = function() {scrollFunction()}
+
+function scrollFunction(){
+    if(document.body.scrollTop > 500 || document.documentElement.scrollTop > 500){
+        scrollButton.style.display = 'flex';
+    }else{
+        scrollButton.style.display = 'none';
+    }
+}
+
+scrollButton.addEventListener('click', () => {
+    document.documentElement.scrollTo({ top: 0, behavior: 'smooth'})
+})
