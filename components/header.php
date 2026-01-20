@@ -1,20 +1,19 @@
-<div class="header-bg">
 <header class="header container">
     <div class="header__logo">
        <a href="../index.php"><h2>Coala</h2></a>
     </div>
     <nav class="header__nav">
         <ul class="header__menu container">
-            <li class="header__item"><a href="..features.php">Features</a></li>
-            <li class="header__item"><a href="..contactUs.php">Contact Us</a></li>
-            <li class="header__item"><a href="..pricing.php">Pricing</a></li>
-            <li class="header__item"><a href="..aboutUs.php">About Us</a></li>
+            <li class="header__item"><a href="../features.php">Features</a></li>
+            <li class="header__item"><a href="../contactUs.php">Contact Us</a></li>
+            <li class="header__item"><a href="../pricing.php">Pricing</a></li>
+            <li class="header__item"><a href="../aboutUs.php">About Us</a></li>
         </ul>
     </nav>
     <div class="header__content">
     <div class="header__buttons">
             <button class="header__buttons--signIn">
-                <a class="text-md text-regular">Sign in</a>
+                <p class="text-md text-regular">Sign in</p>
             </button>
             <button class="green-btn header__buttons--signUp">
                 <p class="text-sm text-regular">Sing Up</p>
@@ -27,4 +26,3 @@
     </div>
     </div>
 </header>
-</div>

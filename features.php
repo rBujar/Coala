@@ -1,4 +1,4 @@
-<?php require_once '../vite-helper.php'; ?>
+<?php require_once './vite-helper.php'; ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -11,7 +11,7 @@
 </head>
 <body>
     <main>
-        <?php include '../components/header.php' ?>
+        <?php include './components/header.php' ?>
         <section class="feature-hero container">
             <div class="row">
                 <div class="feature-hero__title col-12 col-xl-8 offset-xl-2" data-aos="fade" data-aos-delay="100">
@@ -151,7 +151,7 @@
             </div>
             </div>
         </section>
-        <?php include '../components/footer.php' ?>
+        <?php include './components/footer.php' ?>
         <?php viteEntry('src/js/main.js'); ?>
     </main>
 </body>

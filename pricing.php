@@ -1,4 +1,4 @@
-<?php require_once '../vite-helper.php'; ?>
+<?php require_once './vite-helper.php'; ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -12,7 +12,7 @@
 </head>
 <body>
     <main>
-        <?php include '../components/header.php' ?>
+        <?php include './components/header.php' ?>
         <div class="default-bg">
             <section class="plan container">
                 <div class="row">
@@ -207,7 +207,7 @@
                 </div>
             </section>
         </div>
-        <?php include '../components/footer.php'?>
+        <?php include './components/footer.php'?>
         <?php viteEntry('src/js/main.js'); ?>
     </main>
 </body>
