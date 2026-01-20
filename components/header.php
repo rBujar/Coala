@@ -5,10 +5,10 @@
     </div>
     <nav class="header__nav">
         <ul class="header__menu container">
-            <li class="header__item"><a href="../pages/features.php">Features</a></li>
-            <li class="header__item"><a href="../pages/contactUs.php">Contact Us</a></li>
-            <li class="header__item"><a href="../pages/pricing.php">Pricing</a></li>
-            <li class="header__item"><a href="../pages/aboutUs.php">About Us</a></li>
+            <li class="header__item"><a href="..features.php">Features</a></li>
+            <li class="header__item"><a href="..contactUs.php">Contact Us</a></li>
+            <li class="header__item"><a href="..pricing.php">Pricing</a></li>
+            <li class="header__item"><a href="..aboutUs.php">About Us</a></li>
         </ul>
     </nav>
     <div class="header__content">
