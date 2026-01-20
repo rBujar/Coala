@@ -1,6 +1,7 @@
 @import "../mixins.scss";
 
 .plan {
+    padding-top: 80px;
     &__title {
         text-align: center;
         color: var(--text-color-white);

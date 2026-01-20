@@ -1,4 +1,5 @@
 .contact {
+    padding-top: 80px;
     &__content {
         @include position();
         color: var(--text-color-white);

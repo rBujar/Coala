@@ -1,4 +1,6 @@
 .feature-hero {
+    padding-top: 80px;
+
     h1,
     h4 {
         color: var(--text-color-main);
@@ -19,7 +21,7 @@
 
     &__cards {
         @include position();
-        gap: 15px;
+        gap: 30px;
     }
 
     &__item {

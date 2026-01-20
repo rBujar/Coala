@@ -1,6 +1,7 @@
 .hero {
     &__item {
         text-align: center;
+        padding-top: 30px;
     }
 
     &__title {
@@ -42,6 +43,14 @@
 
         &__button {
             gap: 10px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .hero {
+        &__item {
+            padding-top: 0px;
         }
     }
 }

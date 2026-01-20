@@ -13,7 +13,7 @@
 <body>
     <main>
         <?php include './components/header.php' ?>
-        <section class="team container">
+        <section class="team container" data-aos="fade" data-aos-delay="100">
             <div class="row">
                 <div class="team__title col-12">
                     <h2 class="h2-style">Our team</h2>
@@ -79,7 +79,7 @@
                 </div>
             </div>
         </section>
-        <section class="values container">
+        <section class="values container" data-aos="fade" data-aos-delay="150">
             <div class="row">
                 <h2 class="h2-style col-12">Our values</h2>
                 <div class="values__cards col-12">
