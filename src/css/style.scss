@@ -96,6 +96,10 @@ li {
     list-style: none;
 }
 
+button{
+    cursor: pointer;
+}
+
 .green-btn {
     border: none;
     outline: none;
@@ -103,7 +107,6 @@ li {
     background-color: var(--action-color-primary);
     color: var(--text-color-white);
     transition: background-color 0.1s ease-in-out;
-    cursor: pointer;
 
     &:hover {
         background-color: var(--action-color-lightPrimary);

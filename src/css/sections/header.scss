@@ -97,7 +97,6 @@
             color: var(--text-color-grey);
             font-weight: 600;
             transition: transform 0.2s ease-in-out;
-            cursor: pointer;
 
             &:hover {
                 transform: scale(1.2);
@@ -188,7 +187,7 @@
             gap: 20px;
 
             &--signIn {
-                cursor: pointer;
+                
                 &:hover {
                     color: var(--text-color-main);
                 }
