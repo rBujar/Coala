@@ -76,6 +76,7 @@
 
 @media (min-width: 992px) {
     .team {
+        padding-top: 100px;
         &__cards {
             flex-direction: row;
             flex-wrap: wrap;
@@ -85,6 +86,7 @@
 
 @media (min-width: 1200px) {
     .team {
+        padding-top: 120px;
         &__cards {
             justify-content: space-between;
         }

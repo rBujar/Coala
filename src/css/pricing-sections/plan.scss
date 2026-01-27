@@ -81,6 +81,7 @@
 
 @media (min-width: 992px) {
     .plan {
+        padding-top: 100px;
         &__title {
             gap: 30px;
             margin-bottom: 50px;
@@ -90,5 +91,11 @@
                 line-height: 52px;
             }
         }
+    }
+}
+
+@media (min-width: 1200px) {
+    .plan {
+        padding-top: 120px;
     }
 }

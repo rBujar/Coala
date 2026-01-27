@@ -185,6 +185,7 @@
 
 @media (min-width: 992px) {
     .contact {
+        padding-top: 100px;
         &__title {
             text-align: left;
 
@@ -206,5 +207,11 @@
         &__form {
             max-width: 470px;
         }
+    }
+}
+
+@media (min-width: 1200px) {
+    .contact {
+        padding-top: 120px;
     }
 }
