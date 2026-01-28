@@ -1,18 +1,15 @@
 <?php require_once './vite-helper.php'; ?>
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <?php viteClient(); ?>
     <?php viteEntry('src/css/style.scss'); ?>
     <link rel="shortcut icon" type="image/x-icon" href="<?php echo viteAsset('src/assets/favicon.ico'); ?>" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <title>Coala</title>
 </head>
-
-<body>
+    <body>
     <main>
         <?php include './components/header.php' ?>
         <div class="default-bg">
@@ -23,8 +20,8 @@
                         <p class="text-xl text-medium">Startup Framework is free forever you only pay for custom
                             domain hosting or to export your site.</p>
                     </div>
-                    <div class="plan__cards col-12">
-                        <div class="plan__item plan__item--default">
+                    <div class="plan__cards col-12" data-aos="fade" data-aos-delay="100">
+                        <div class="plan__item">
                             <div class="plan__type">
                                 <p class="text-xl text-semibold">Starter</p>
                                 <h2>9.99<span>$</span></h2>
@@ -68,7 +65,7 @@
                             </div>
 
                         </div>
-                        <div class="plan__item plan__item--default">
+                        <div class="plan__item">
                             <div class="plan__type">
                                 <p class="text-xl text-semibold">Professional</p>
                                 <h2>19.99<span>$</span></h2>
@@ -111,7 +108,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="plan__item plan__item--default">
+                        <div class="plan__item">
                             <div class="plan__type">
                                 <p class="text-xl text-semibold">Team</p>
                                 <h2>49.99<span>$</span></h2>
@@ -156,7 +153,6 @@
 
                         </div>
                     </div>
-
             </section>
         </div>
         <div class="dark-bg">
