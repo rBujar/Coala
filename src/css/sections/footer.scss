@@ -38,15 +38,12 @@
             @include border();
             border-radius: 100%;
             color: var(--text-color-white);
-        }
+            transition: color 0.2s ease-in;
 
-        a {
-            transition: transform 0.2s ease-in-out;
-
-            &:hover {
-                transform: scale(1.2);
+            &:hover{
+                color:rgba(255, 255, 255, 0.3);
             }
-        }
+        } 
     }
 }
 
