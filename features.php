@@ -104,7 +104,7 @@
                         </div>
                         <div class="layers__list">
                             <div class="layers__item">
-                                <i class="icon-squares"></i>
+                                <i class="icon-square"></i>
                                 <p class="text-md text-bold">Well Structured Layers</p>
                             </div>
                             <div class="layers__item">

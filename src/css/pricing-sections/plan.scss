@@ -38,7 +38,6 @@
             gap: 10px;
             font-weight: 700;
             font-size: 58px;
-            margin-top: 20px;
 
             span {
                 font-size: 16px;
@@ -81,6 +80,16 @@
                 background-color: var(--action-color-thirdLight);
             }
         }
+    }
+}
+
+@media (min-width: 576px) {
+    .plan {
+
+        &__item{
+            width: 320px;
+        }
+
     }
 }
 

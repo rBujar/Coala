@@ -66,9 +66,9 @@
         @include position($direction: row, $justify: start);
         gap: 10px;
         margin-top: 15px;
-        color: rgba(0, 0, 0, 0.6);
 
         i {
+            color: rgba(0, 0, 0, 0.6);
             font-size: 22px;
         }
     }
