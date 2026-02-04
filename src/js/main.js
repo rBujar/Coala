@@ -1,4 +1,5 @@
 import AOS from "aos";
+import "./form.js";
 import "aos/dist/aos.css";
 const hamburger = document.querySelector(".header__hamburger");
 const headerMenu = document.querySelector(".header__nav");
@@ -41,3 +42,6 @@ function scrollFunction(){
 scrollButton.addEventListener('click', () => {
     document.documentElement.scrollTo({ top: 0, behavior: 'smooth'})
 })
+
+
+//

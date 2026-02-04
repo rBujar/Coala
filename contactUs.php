@@ -37,16 +37,16 @@
                     </div>
                     <div class="contact__formContainer col-12 col-lg-6 offset-lg-1 col-xl-5" data-aos="fade" data-aos-delay="150">
                         <div class="contact__formWrapper">
-                            <div id="error"></div>
-                        <form action="https://api.web3forms.com/submit" class="contact__form" method="POST" >
+                        <form class="contact__form" id="form">
                             <div class="contact__fields">
                                 <div class="contact__field">
                             <label for="fname">Your Name</label>
-                            <input type="text" id="fname" name="firstname" placeholder="First name" required>
+                            <input type="text" id="fname" name="name" placeholder="First name" required>
                             </div>
                             <div class="contact__field contact__field--budget">
                             <label for="budget">Budget</label>
                             <select name="budget" id="budget">
+                                <option  value="" selected disabled>$</option>
                                 <option value="250">250$</option>
                                 <option value="500">500$</option>
                                 <option value="800">800$</option>
