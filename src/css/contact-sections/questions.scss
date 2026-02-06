@@ -54,7 +54,16 @@
             gap: 90px;
         }
 
-        &__items {
+        &__item {
+            max-width: 410px;
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    .questions {
+
+        &__item {
             max-width: 470px;
         }
     }

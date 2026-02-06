@@ -12,6 +12,11 @@
         }
     }
 
+    &__cards{
+        @include position( );
+        gap: 20px;
+    }
+
     &__item {
         overflow: hidden;
         color: var(--text-color-white);
@@ -33,7 +38,6 @@
             gap: 10px;
             font-weight: 700;
             font-size: 58px;
-            margin-top: 20px;
 
             span {
                 font-size: 16px;
@@ -66,7 +70,7 @@
         button {
             background-color: transparent;
             border: 1px solid rgba(255, 255, 255, 0.5);
-            padding: 15px 60px;
+            padding: 15px 50px;
             max-width: 230px;
             border-radius: 50px;
             color: var(--text-color-white);
@@ -76,6 +80,16 @@
                 background-color: var(--action-color-thirdLight);
             }
         }
+    }
+}
+
+@media (min-width: 576px) {
+    .plan {
+
+        &__item{
+            width: 320px;
+        }
+
     }
 }
 
@@ -91,11 +105,34 @@
                 line-height: 52px;
             }
         }
+
+        &__cards{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        &__item{
+            width: 288px;
+        }
     }
 }
 
 @media (min-width: 1200px) {
     .plan {
         padding-top: 120px;
+
+        &__item{
+            width: 380px;
+        }
+
+        &__button {
+            p{
+                font-size: 20px;
+            }
+
+            button {
+                padding: 15px 60px;
+            }
+        }
     }
 }

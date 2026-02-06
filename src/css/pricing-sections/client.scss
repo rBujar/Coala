@@ -75,6 +75,28 @@
         }
 
         &__item {
+            max-width: 355px;
+        }
+    }
+}
+@media (min-width: 1400px) {
+    .client {
+        &__title {
+            text-align: left;
+        }
+
+        &__info {
+            p {
+                font-size: 16px;
+            }
+        }
+
+        &__cards {
+            justify-content: left;
+            gap: 30px;
+        }
+
+        &__item {
             max-width: 415px;
         }
     }

@@ -7,10 +7,9 @@
     <?php viteClient(); ?>
     <?php viteEntry('src/css/style.scss'); ?>
     <link rel="shortcut icon" type="image/x-icon" href="<?php echo viteAsset('src/assets/favicon.ico'); ?>" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <title>Coala</title>
 </head>
-<body>
+    <body>
     <main>
         <?php include './components/header.php' ?>
         <div class="default-bg">
@@ -21,146 +20,139 @@
                         <p class="text-xl text-medium">Startup Framework is free forever you only pay for custom
                             domain hosting or to export your site.</p>
                     </div>
-                    <div class="swiper swiper-plans" data-aos="fade" data-aos-delay="150">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="plan__item plan__item--default">
-                                    <div class="plan__type">
-                                        <p class="text-xl text-semibold">Starter</p>
-                                        <h2>9.99<span>$</span></h2>
-                                    </div>
-                                    <ul class="plan__features">
-                                        <li> <i class="icon-check"></i>
-                                            <p class="text-sm text-regular">2 GB of space</p>
-                                        </li>
-                                        <li> <i class="icon-check"></i>
-                                            <p class="text-sm text-regular">14 days of backups</p>
-                                        </li>
-                                        <li> <i class="icon-check"></i>
-                                            <p class="text-sm text-regular">Social integrations</p>
-                                        </li>
-                                        <li> <i class="icon-check"></i>
-                                            <p class="text-sm text-regular">Client billing</p>
-                                        </li>
-                                        <li>
-                                            <p class="text-sm text-regular not-checked">Remote access</p>
-                                        </li>
-                                        <li>
-                                            <p class="text-sm text-regular not-checked">Custom domain</p>
-                                        </li>
-                                        <li>
-                                            <p class="text-sm text-regular not-checked">24 hours support</p>
-                                        </li>
-                                        <li>
-                                            <p class="text-sm text-regular not-checked">Admin tools</p>
-                                        </li>
-                                        <li>
-                                            <p class="text-sm text-regular not-checked">Collaboration tools</p>
-                                        </li>
-                                        <li>
-                                            <p class="text-sm text-regular not-checked">User management</p>
-                                        </li>
-                                    </ul>
-                                    <div class="plan__button">
-                                        <button>
-                                            <p class="text-lg text-medium">Get Started</p>
-                                        </button>
-                                    </div>
-                                </div>
+                    <div class="plan__cards col-12" data-aos="fade" data-aos-delay="100">
+                        <div class="plan__item">
+                            <div class="plan__type">
+                                <p class="text-xl text-semibold">Starter</p>
+                                <h2>9.99<span>$</span></h2>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="plan__item plan__item--default">
-                                    <div class="plan__type">
-                                        <p class="text-xl text-semibold">Professional</p>
-                                        <h2>19.99<span>$</span></h2>
-                                    </div>
-                                    <ul class="plan__features">
-                                        <li> <i class="icon-check"></i>
-                                            <p class="text-sm text-regular">2 GB of space</p>
-                                        </li>
-                                        <li> <i class="icon-check"></i>
-                                            <p class="text-sm text-regular">14 days of backups</p>
-                                        </li>
-                                        <li> <i class="icon-check"></i>
-                                            <p class="text-sm text-regular">Social integrations</p>
-                                        </li>
-                                        <li> <i class="icon-check"></i>
-                                            <p class="text-sm text-regular">Client billing</p>
-                                        </li>
-                                        <li> <i class="icon-check"></i>
-                                            <p class="text-sm text-regular">Remote access</p>
-                                        </li>
-                                        <li> <i class="icon-check"></i>
-                                            <p class="text-sm text-regular">Custom domain</p>
-                                        </li>
-                                        <li> <i class="icon-check"></i>
-                                            <p class="text-sm text-regular">24 hours support</p>
-                                        </li>
-                                        <li>
-                                            <p class="text-sm text-regular not-checked">Admin tools</p>
-                                        </li>
-                                        <li>
-                                            <p class="text-sm text-regular not-checked">Collaboration tools</p>
-                                        </li>
-                                        <li>
-                                            <p class="text-sm text-regular not-checked">User management</p>
-                                        </li>
-                                    </ul>
-                                    <div class="plan__button">
-                                        <button>
-                                            <p class="text-lg text-medium">Get Started</p>
-                                        </button>
-                                    </div>
-                                </div>
+                            <ul class="plan__features">
+                                <li> <i class="icon-check"></i>
+                                    <p class="text-sm text-regular">2 GB of space</p>
+                                </li>
+                                <li> <i class="icon-check"></i>
+                                    <p class="text-sm text-regular">14 days of backups</p>
+                                </li>
+                                <li> <i class="icon-check"></i>
+                                    <p class="text-sm text-regular">Social integrations</p>
+                                </li>
+                                <li> <i class="icon-check"></i>
+                                    <p class="text-sm text-regular">Client billing</p>
+                                </li>
+                                <li>
+                                    <p class="text-sm text-regular not-checked">Remote access</p>
+                                </li>
+                                <li>
+                                    <p class="text-sm text-regular not-checked">Custom domain</p>
+                                </li>
+                                <li>
+                                    <p class="text-sm text-regular not-checked">24 hours support</p>
+                                </li>
+                                <li>
+                                    <p class="text-sm text-regular not-checked">Admin tools</p>
+                                </li>
+                                <li>
+                                    <p class="text-sm text-regular not-checked">Collaboration tools</p>
+                                </li>
+                                <li>
+                                    <p class="text-sm text-regular not-checked">User management</p>
+                                </li>
+                            </ul>
+                            <div class="plan__button">
+                                <button>
+                                    <p class="text-md text-medium">Get Started</p>
+                                </button>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="plan__item plan__item--default">
-                                    <div class="plan__type">
-                                        <p class="text-xl text-semibold">Team</p>
-                                        <h2>49.99<span>$</span></h2>
-                                    </div>
-                                    <ul class="plan__features">
-                                        <li> <i class="icon-check"></i>
-                                            <p class="text-sm text-regular">2 GB of space</p>
-                                        </li>
-                                        <li> <i class="icon-check"></i>
-                                            <p class="text-sm text-regular">14 days of backups</p>
-                                        </li>
-                                        <li> <i class="icon-check"></i>
-                                            <p class="text-sm text-regular">Social integrations</p>
-                                        </li>
-                                        <li> <i class="icon-check"></i>
-                                            <p class="text-sm text-regular">Client billing</p>
-                                        </li>
-                                        <li> <i class="icon-check"></i>
-                                            <p class="text-sm text-regular">Remote access</p>
-                                        </li>
-                                        <li> <i class="icon-check"></i>
-                                            <p class="text-sm text-regular">Custom domain</p>
-                                        </li>
-                                        <li> <i class="icon-check"></i>
-                                            <p class="text-sm text-regular">24 hours support</p>
-                                        </li>
-                                        <li> <i class="icon-check"></i>
-                                            <p class="text-sm text-regular">Admin tools</p>
-                                        </li>
-                                        <li> <i class="icon-check"></i>
-                                            <p class="text-sm text-regular">Collaboration tools</p>
-                                        </li>
-                                        <li> <i class="icon-check"></i>
-                                            <p class="text-sm text-regular">User management</p>
-                                        </li>
-                                    </ul>
-                                    <div class="plan__button">
-                                        <button>
-                                            <p class="text-lg text-medium">Get Started</p>
-                                        </button>
-                                    </div>
-                                </div>
+
+                        </div>
+                        <div class="plan__item">
+                            <div class="plan__type">
+                                <p class="text-xl text-semibold">Professional</p>
+                                <h2>19.99<span>$</span></h2>
+                            </div>
+                            <ul class="plan__features">
+                                <li> <i class="icon-check"></i>
+                                    <p class="text-sm text-regular">2 GB of space</p>
+                                </li>
+                                <li> <i class="icon-check"></i>
+                                    <p class="text-sm text-regular">14 days of backups</p>
+                                </li>
+                                <li> <i class="icon-check"></i>
+                                    <p class="text-sm text-regular">Social integrations</p>
+                                </li>
+                                <li> <i class="icon-check"></i>
+                                    <p class="text-sm text-regular">Client billing</p>
+                                </li>
+                                <li> <i class="icon-check"></i>
+                                    <p class="text-sm text-regular">Remote access</p>
+                                </li>
+                                <li> <i class="icon-check"></i>
+                                    <p class="text-sm text-regular">Custom domain</p>
+                                </li>
+                                <li> <i class="icon-check"></i>
+                                    <p class="text-sm text-regular">24 hours support</p>
+                                </li>
+                                <li>
+                                    <p class="text-sm text-regular not-checked">Admin tools</p>
+                                </li>
+                                <li>
+                                    <p class="text-sm text-regular not-checked">Collaboration tools</p>
+                                </li>
+                                <li>
+                                    <p class="text-sm text-regular not-checked">User management</p>
+                                </li>
+                            </ul>
+                            <div class="plan__button">
+                                <button>
+                                    <p class="text-md text-medium">Get Started</p>
+                                </button>
                             </div>
                         </div>
+                        <div class="plan__item">
+                            <div class="plan__type">
+                                <p class="text-xl text-semibold">Team</p>
+                                <h2>49.99<span>$</span></h2>
+                            </div>
+                            <ul class="plan__features">
+                                <li> <i class="icon-check"></i>
+                                    <p class="text-sm text-regular">2 GB of space</p>
+                                </li>
+                                <li> <i class="icon-check"></i>
+                                    <p class="text-sm text-regular">14 days of backups</p>
+                                </li>
+                                <li> <i class="icon-check"></i>
+                                    <p class="text-sm text-regular">Social integrations</p>
+                                </li>
+                                <li> <i class="icon-check"></i>
+                                    <p class="text-sm text-regular">Client billing</p>
+                                </li>
+                                <li> <i class="icon-check"></i>
+                                    <p class="text-sm text-regular">Remote access</p>
+                                </li>
+                                <li> <i class="icon-check"></i>
+                                    <p class="text-sm text-regular">Custom domain</p>
+                                </li>
+                                <li> <i class="icon-check"></i>
+                                    <p class="text-sm text-regular">24 hours support</p>
+                                </li>
+                                <li> <i class="icon-check"></i>
+                                    <p class="text-sm text-regular">Admin tools</p>
+                                </li>
+                                <li> <i class="icon-check"></i>
+                                    <p class="text-sm text-regular">Collaboration tools</p>
+                                </li>
+                                <li> <i class="icon-check"></i>
+                                    <p class="text-sm text-regular">User management</p>
+                                </li>
+                            </ul>
+                            <div class="plan__button">
+                                <button>
+                                    <p class="text-md text-medium">Get Started</p>
+                                </button>
+                            </div>
+
+                        </div>
                     </div>
-                </div>
             </section>
         </div>
         <div class="dark-bg">
@@ -207,8 +199,9 @@
                 </div>
             </section>
         </div>
-        <?php include './components/footer.php'?>
+        <?php include './components/footer.php' ?>
         <?php viteEntry('src/js/main.js'); ?>
     </main>
 </body>
+
 </html>

@@ -27,10 +27,10 @@
                             <span>Senior Front-end Developer</span>
                             <p class="text-sm text-regular">Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
                             <div class="team__socials">
-                                <i class="icon-facebook"></i>
-                                <i class="icon-twitter"></i>
-                                <i class="icon-net"></i>
-                                <i class="icon-github"></i>
+                                <a href="#"><i class="icon-facebook"></i></a>
+                                <a href="#"><i class="icon-twitter"></i></a>
+                                <a href="#"><i class="icon-net"></i></a>
+                                <a href="#"><i class="icon-github"></i></a>
                             </div>
                         </div>
                     </div>
@@ -41,10 +41,10 @@
                             <span>Senior back-end Developer</span>
                             <p class="text-sm text-regular">Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
                             <div class="team__socials">
-                                <i class="icon-facebook"></i>
-                                <i class="icon-twitter"></i>
-                                <i class="icon-net"></i>
-                                <i class="icon-github"></i>
+                                <a href="#"><i class="icon-facebook"></i></a>
+                                <a href="#"><i class="icon-twitter"></i></a>
+                                <a href="#"><i class="icon-net"></i></a>
+                                <a href="#"><i class="icon-github"></i></a>
                             </div>
                         </div>
                     </div>
@@ -55,10 +55,10 @@
                             <span>Senior Fullstack Developer</span>
                             <p class="text-sm text-regular">Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
                             <div class="team__socials">
-                                <i class="icon-facebook"></i>
-                                <i class="icon-twitter"></i>
-                                <i class="icon-net"></i>
-                                <i class="icon-github"></i>
+                                <a href="#"><i class="icon-facebook"></i></a>
+                                <a href="#"><i class="icon-twitter"></i></a>
+                                <a href="#"><i class="icon-net"></i></a>
+                                <a href="#"><i class="icon-github"></i></a>
                             </div>
                         </div>
                     </div>
@@ -69,10 +69,10 @@
                             <span>Graphic Designer</span>
                             <p class="text-sm text-regular">Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
                             <div class="team__socials">
-                                <i class="icon-facebook"></i>
-                                <i class="icon-twitter"></i>
-                                <i class="icon-net"></i>
-                                <i class="icon-github"></i>
+                                <a href="#"><i class="icon-facebook"></i></a>
+                                <a href="#"><i class="icon-twitter"></i></a>
+                                <a href="#"><i class="icon-net"></i></a>
+                                <a href="#"><i class="icon-github"></i></a>
                             </div>
                         </div>
                     </div>

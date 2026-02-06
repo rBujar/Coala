@@ -38,6 +38,10 @@
     &__phones {
         display: flex;
         justify-content: center;
+
+        img{
+            max-width: 300px;
+        }
     }
 }
 
@@ -57,6 +61,12 @@
         &__item {
             p {
                 font-size: 16px;
+            }
+        }
+
+        &__phones{
+            img{
+                max-width: 100%;
             }
         }
     }
