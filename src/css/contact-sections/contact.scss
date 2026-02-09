@@ -106,21 +106,22 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: relative;
 
-        &:nth-child(2) {
+        &:nth-child(2), &:nth-child(3) {
             flex-direction: column;
             align-items: start;
-
-            input,
-            textarea {
-                margin-bottom: 35px;
-            }
         }
     }
 
     &__field {
         display: flex;
         flex-direction: column;
+
+
+        &:first-child{
+            max-height: 85px;
+        }
     }
 
     &__checkbox {
@@ -155,6 +156,17 @@
         padding: 12px 40px;
         color: var(--text-color-white);
     }
+}
+
+.error{
+    color: red;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    position: absolute;
+    bottom: 0px;
+    transform: translate(15px, 20px);
+
 }
 
 @media (min-width: 576px) {

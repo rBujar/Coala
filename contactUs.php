@@ -41,7 +41,8 @@
                             <div class="contact__fields">
                                 <div class="contact__field">
                             <label for="fname">Your Name</label>
-                            <input type="text" id="fname" name="name" placeholder="First name" required>
+                            <input type="text" id="fname" name="name" placeholder="First name" >
+                            <span class="error nameError"></span>
                             </div>
                             <div class="contact__field contact__field--budget">
                             <label for="budget">Budget</label>
@@ -55,16 +56,20 @@
                             </div>
                             <div class="contact__fields">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="name@mail.com" required>
+                            <input type="email" id="email" name="email" placeholder="name@mail.com" >
+                            <span class="error emailError"></span>
+                            </div>
+                            <div class="contact__fields">
                             <label for="message">Your Message</label>
-                            <textarea name="message" id="message" placeholder="Message" required></textarea>
+                            <textarea name="message" id="message" placeholder="Message" ></textarea>
+                            <span class="error messageError"></span>
                             </div>
                             <div class="contact__fields">
                             <div class="contact__checkbox">
                             <input type="checkbox" id="copy" name="copy" value="copy">
                             <label for="copy">Send me a copy</label>
                             </div>
-                            <button class="green-btn" type="submit"><p class="text-md text-regular">Send</p></button>
+                            <button class="green-btn" id="submit" type="submit"><p class="text-md text-regular">Send</p></button>
                             </div>
                             <input type="hidden" name="access_key" value="89f07b6e-8fdd-422b-8a2b-7fe7ddc27c0d">
                         </form>
