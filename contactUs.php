@@ -35,8 +35,7 @@
                         </div>
                     </div>
                     </div>
-                    <div class="contact__formContainer col-12 col-lg-6 offset-lg-1 col-xl-5" data-aos="fade" data-aos-delay="150">
-                        <div class="contact__formWrapper">
+                        <div class="contact__formWrapper col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-1 col-xl-5" data-aos="fade" data-aos-delay="150">
                         <form class="contact__form" id="form">
                             <div class="contact__fields">
                                 <div class="contact__field">
@@ -54,12 +53,12 @@
                             </select>
                             </div>
                             </div>
-                            <div class="contact__fields">
+                            <div class="contact__field">
                             <label for="email">Email</label>
                             <input type="email" id="email" name="email" placeholder="name@mail.com" >
                             <span class="error emailError"></span>
                             </div>
-                            <div class="contact__fields">
+                            <div class="contact__field">
                             <label for="message">Your Message</label>
                             <textarea name="message" id="message" placeholder="Message" ></textarea>
                             <span class="error messageError"></span>
@@ -74,7 +73,6 @@
                             <input type="hidden" name="access_key" value="89f07b6e-8fdd-422b-8a2b-7fe7ddc27c0d">
                         </form>
                         </div>
-                    </div>
                 </div>
             </section>
         </div>

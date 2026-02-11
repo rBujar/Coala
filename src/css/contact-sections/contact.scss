@@ -1,5 +1,6 @@
 .contact {
     padding-top: 80px;
+
     &__content {
         @include position();
         color: var(--text-color-white);
@@ -28,7 +29,7 @@
         gap: 15px;
         padding-right: 20px;
 
-        a{
+        a {
             color: var(--text-color-white);
         }
     }
@@ -54,6 +55,7 @@
             color: var(--text-color-main);
             letter-spacing: 2px;
             margin-bottom: 5px;
+            display: block;
         }
 
         textarea {
@@ -99,29 +101,18 @@
             color: var(--text-color-main);
             width: 100px;
         }
-
     }
 
     &__fields {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        position: relative;
-
-        &:nth-child(2), &:nth-child(3) {
-            flex-direction: column;
-            align-items: start;
-        }
     }
 
     &__field {
         display: flex;
         flex-direction: column;
-
-
-        &:first-child{
-            max-height: 85px;
-        }
+        position: relative;
     }
 
     &__checkbox {
@@ -158,15 +149,14 @@
     }
 }
 
-.error{
+.error {
     color: red;
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.5px;
     position: absolute;
-    bottom: 0px;
-    transform: translate(15px, 20px);
-
+    bottom: -20px;
+    left: 22px;
 }
 
 @media (min-width: 576px) {
@@ -199,6 +189,7 @@
 @media (min-width: 992px) {
     .contact {
         padding-top: 100px;
+
         &__title {
             text-align: left;
 
@@ -211,14 +202,6 @@
         &__formContainer {
             display: flex;
             justify-content: end;
-        }
-
-        &__formWrapper {
-            min-width: 470px;
-        }
-
-        &__form {
-            max-width: 470px;
         }
     }
 }
