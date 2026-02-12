@@ -1,5 +1,4 @@
 import AOS from "aos";
-import "./form.js";
 import "aos/dist/aos.css";
 const hamburger = document.querySelector(".header__hamburger");
 const headerMenu = document.querySelector(".header__nav");

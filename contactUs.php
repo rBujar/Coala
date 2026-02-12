@@ -108,7 +108,7 @@
             </div>
         </section>
         <?php include './components/footer.php'?>
-        <?php viteEntry('src/js/main.js'); ?>
+        <?php viteEntry('src/js/form.js'); ?>
     </main>
 </body>
 </html>
