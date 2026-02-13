@@ -23,6 +23,7 @@
         padding: 40px;
         border-radius: 10px;
         @include border();
+        width: 320px;
 
         ul {
             padding: 0px;
@@ -87,7 +88,7 @@
     .plan {
 
         &__item{
-            width: 320px;
+            width: 350px;
         }
 
     }

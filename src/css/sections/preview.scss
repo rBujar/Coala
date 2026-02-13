@@ -20,6 +20,10 @@
     &__item {
         @include position($align: left);
         gap: 10px;
+
+        img{
+            max-width: 170px;
+        }
     }
 
     &__title {
@@ -29,6 +33,7 @@
 
         p {
             padding-right: 10px;
+            
         }
 
         h4 {
