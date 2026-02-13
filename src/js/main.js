@@ -76,7 +76,7 @@ form.addEventListener('submit', async (e) => {
         hasError = true
     }
 
-    if(message === "" || message <= 10){
+    if(message === "" || message.length <= 5){
         messageError.innerText = 'Your message is too short!'
         if(!hasError){
             hasError = true
@@ -105,6 +105,9 @@ form.addEventListener('submit', async (e) => {
             alert("Success! Your message has been sent.");
             form.reset();
 
+            nameError.innerText = "";
+            emailError.innerText = "";
+            messageError.innerText = "";
         } else {
             alert("Error: " + data.message);
         }
@@ -116,3 +119,4 @@ form.addEventListener('submit', async (e) => {
         submitBtn.disabled = false;
     }
 });
+
